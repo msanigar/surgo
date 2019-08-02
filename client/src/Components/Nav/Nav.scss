@@ -29,7 +29,7 @@
   
     label {
       position: absolute;
-      top: 50%;
+      top: 60%;
       right: 10px;
       display: block;
       width: 50px;
@@ -50,9 +50,9 @@
     label div {
       position: relative;
       top: 0;
-      height: 12px;
+      height: 8px;
       background-color: $black;
-      margin-bottom: 12px;
+      margin-bottom: 6px;
       transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
       border-radius: 2px;
     }
@@ -68,24 +68,26 @@
   
     label div:nth-child(2) {
       right: 0;
-      width: 50px;
+    	width: 50px;
     }
   
     #nav-checkbox:checked + label div:first-child {
-      top: -2px;
-      transform: rotateZ(45deg);
+			top: -4px;
+			right: -7px;
+			transform: rotateZ(45deg);
     }
   
     #nav-checkbox:checked + label div:last-child {
-      top: 0px;
-      transform: rotateZ(45deg);
+			top: 10px;
+			right: 1px;
+    	transform: rotateZ(45deg);
     }
   
     #nav-checkbox:checked + label div:nth-child(2) {
-      width: 70px;
-      top: 0;
-      right: 10px;
-      transform: rotateZ(-45deg);
+			width: 60px;
+			top: 4px;
+			left: -2px;
+			transform: rotateZ(-45deg);
     }
   
     a {
