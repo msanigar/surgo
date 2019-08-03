@@ -11,14 +11,15 @@
   .nav-logo {
       width: 50%;
       height: 100%;
+      text-align: left;
       
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: $black;
-        font-weight: 700;
+        font-weight: 500;
         vertical-align: middle;
         line-height: 10vh;
-        padding-left: 1rem;
+        padding-left: 2rem;
       }
   }
 
@@ -30,11 +31,11 @@
     label {
       position: absolute;
       top: 60%;
-      right: 10px;
+      right: 30px;
       display: block;
-      width: 50px;
-      height: 50px;
-      margin: -30px auto 0 auto;
+      width: 30px;
+      height: 30px;
+      margin: -15px auto 0 auto;
       cursor: pointer;
     }
   
@@ -50,7 +51,7 @@
     label div {
       position: relative;
       top: 0;
-      height: 8px;
+      height: 3px;
       background-color: $black;
       margin-bottom: 6px;
       transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
@@ -68,7 +69,7 @@
   
     label div:nth-child(2) {
       right: 0;
-    	width: 50px;
+    	width: 30px;
     }
   
     a {
