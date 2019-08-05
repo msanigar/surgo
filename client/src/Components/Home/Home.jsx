@@ -1,7 +1,7 @@
 import React from 'react';
-import './Home.scss';
+import { Link } from "react-router-dom";
 
-import Button from '../Button'
+import './Home.scss';
 
 const Home = () => {
     return (
@@ -15,7 +15,9 @@ const Home = () => {
                 <h2>To rise up, to climb, to move upwards</h2>
                 <p>Our programmes provide teams with the knowledge, tools and support they need to develop their players into professional athletes.</p>
                 <div className="btn-container">
-                    <Button text={"About Surgo"} />
+                    <Link className="btn" to={"/about"}>
+                        About Surgo
+                    </Link>
                 </div>
                 </div>
         </div>

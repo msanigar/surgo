@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import './App.scss';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Nav from '../../Components/Nav'
 import Home from '../../Components/Home'
 import Menu from '../../Components/Menu'
+import About from '../../Components/About'
+
+import './App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -24,11 +27,16 @@ class App extends Component {
 
   render () {
     return (
-      <div className="app-container">
-        <Home />
-        <Nav toggle={this.toggleNav} />
-        <Menu hide={this.toggleNav} show={this.state.navOpen} />
-      </div>
+      <Fragment>
+        <Router>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <div className="app-container">
+            <Nav toggle={this.toggleNav} />
+            <Menu hide={this.toggleNav} show={this.state.navOpen} />
+          </div>
+        </Router>
+      </Fragment>
     );
   }
 }
