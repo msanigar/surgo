@@ -20,12 +20,22 @@ class App extends Component {
   }
 
   toggleNav = () => {
+
+    // bit of a race condition here..
+    // check the state before we change it
+
+    if (!this.state.navOpen) {
+      document.body.classList.add('noscroll');
+    } else {
+      document.body.classList.remove('noscroll');
+    }
+
     this.setState({
       navOpen: !this.state.navOpen
     })
   }
 
-  render () {
+  render() {
     return (
       <Fragment>
         <Router>

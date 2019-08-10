@@ -1,8 +1,13 @@
 @font-face {
-    font-family: 'CamptonMedium';
-    src: url('./CamptonMedium.eot');
-    src: url('./CamptonMedium.eot?#iefix') format('embedded-opentype'),
-         url('./CamptonMedium.woff2') format('woff2'),
-         url('./CamptonMedium.woff') format('woff'),
-         url('./CamptonMedium.ttf')  format('truetype'),
-  }
+  font-family: "CamptonMedium";
+  src: url("./CamptonMedium.eot");
+  src: url("./CamptonMedium.eot?#iefix") format("embedded-opentype"), url("./CamptonMedium.woff2") format("woff2"),
+    url("./CamptonMedium.woff") format("woff"), url("./CamptonMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CamptonLight";
+  src: url("./CamptonLight.eot");
+  src: url("./CamptonLight.eot?#iefix") format("embedded-opentype"), url("./CamptonLight.woff2") format("woff2"),
+    url("./CamptonLight.woff") format("woff"), url("./CamptonLight.ttf") format("truetype");
+}

@@ -1,11 +1,20 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'CamptonMedium', "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "CamptonMedium", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light-font {
+  font-family: -apple-system, BlinkMacSystemFont, "CamptonLight", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.noscroll {
+  overflow: hidden;
 }
