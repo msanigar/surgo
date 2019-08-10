@@ -31,12 +31,11 @@
 
 .menu-content {
   background-color: $white;
-  height: 65%;
   flex-direction: column;
   text-align: left;
   display: flex;
   padding: 2rem 6rem;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 
   h4 {
     margin: 2rem 0.125rem;
@@ -69,7 +68,6 @@
   .menu-header {
     display: flex;
     flex-direction: column;
-    height: 45%;
     padding: 2rem 4rem;
     line-height: 3rem;
     position: relative;
