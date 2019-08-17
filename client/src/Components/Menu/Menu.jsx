@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Menu.scss';
+import { ReactComponent as Close } from '../../Styles/SVG/close.svg';
 
 const Menu = ({ show, hide }) => {
   return (
@@ -12,15 +13,16 @@ const Menu = ({ show, hide }) => {
           <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
 
           <div className="btn-container">
-            <a className="btn">
+            <button className="btn">
               Sign up
-            </a>
+            </button>
           </div>
 
           <div
             className="cross light-font"
             onClick={() => hide()}
           >
+          <Close />
           </div>
         </div>
         <div className="menu-content">
