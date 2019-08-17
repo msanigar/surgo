@@ -115,3 +115,110 @@
       }
   }
 }
+
+.home-4 {
+  width: 90vw;
+  margin: 0 auto;
+  color: $white;
+  text-align: center;
+  margin-top: 2rem;
+  min-height: 60vh;
+
+  .container {
+    background: $dark-blue;
+    margin: 0 auto;
+  }
+
+  hr {
+    width: 50px;
+    border-color: $blue;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    padding: 2rem;
+    font-weight: 700;
+
+    &.company {
+      color: $light-blue;
+    }
+  }
+}
+
+.home-5 {
+  height: 40vh;
+  min-height: 40vh;
+  background-color: $blue;
+  padding: 2rem;
+  color: $white;
+
+  .home-beta-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .btn {
+    padding: 0.5rem 2rem;
+    min-width: 180px;
+  }
+
+  .home-beta {
+    input {
+      &::-webkit-input-placeholder {
+        color: $white;
+      }
+
+      &::-moz-placeholder {
+        color: $white;
+      }
+
+      &::-ms-placeholder {
+        color: $white;
+      }
+
+      &::placeholder {
+        color: $white;
+      }
+
+      background-color: transparent;
+      border: none;
+      color: $white;
+      border-bottom: 1px solid $white;
+      border-radius: 0;
+      outline: none;
+      height: 3rem;
+      width: 100%;
+      font-size: 16px;
+      margin: 2rem 0 8px 0;
+      padding: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+      transition: border 0.3s, -webkit-box-shadow 0.3s;
+      transition: box-shadow 0.3s, border 0.3s;
+      transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+    }
+  }
+}
+
+.home-6 {
+  background-color: $dark-blue;
+  padding: 2rem;
+  font-weight: 700;
+  
+  .top {
+    margin-top: 12rem;
+    color: $blue;
+  }
+  .middle {
+    font-size: 2.65rem;
+    color: $white;
+    margin-top: 0.5rem;
+  }
+  .bottom {
+    margin-top: 12rem;
+    color: $white;
+  }
+}
