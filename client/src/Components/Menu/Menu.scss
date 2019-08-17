@@ -7,7 +7,7 @@
   bottom: 0px;
   right: -100vw;
   display: flex;
-  display: -webkit-flex-;
+  display: -webkit-flex;
   flex-flow: column nowrap;
   background-color: $white;
   color: $black;
@@ -31,11 +31,12 @@
 }
 
 .menu-content {
+  min-height: 100vh;
   background-color: $white;
   flex-direction: column;
   text-align: left;
   display: flex;
-  display: -webkit-flex-;
+  display: -webkit-flex;
   padding: 2rem 4rem;
   margin-bottom: 3rem;
 
@@ -64,17 +65,18 @@
 
 .menu-container {
   display: flex;
-  display: -webkit-flex-;
+  display: -webkit-flex;
   flex-direction: column;
   background-color: $blue;
   min-height: 100vh;
   .menu-header {
     display: flex;
-    display: -webkit-flex-;
+    display: -webkit-flex;
     flex-direction: column;
     padding: 2rem 4rem;
     line-height: 3rem;
     position: relative;
+    min-height: 50vh;
 
     .btn-container {
       width: 100%;
