@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import ScrollToTop from '../../Components/ScrollToTop';
+
 import Nav from '../../Components/Nav'
 import Home from '../../Components/Home'
 import Menu from '../../Components/Menu'
@@ -39,13 +41,16 @@ class App extends Component {
     return (
       <Fragment>
         <Router>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <div className="app-container">
-            <Nav toggle={this.toggleNav} />
-            <Menu hide={this.toggleNav} show={this.state.navOpen} />
-          </div>
+          <ScrollToTop>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <div className="app-container">
+              <Nav toggle={this.toggleNav} />
+              <Menu hide={this.toggleNav} show={this.state.navOpen} />
+            </div>
+          </ScrollToTop>
         </Router>
+
       </Fragment>
     );
   }
