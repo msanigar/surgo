@@ -1,6 +1,11 @@
 import Document, { Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <html>
