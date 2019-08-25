@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Home from '../components/home';
-import Nav from '../components/Nav';
-import Menu from '../components/Menu';
+import Home from '../components/Home/Home';
+import Nav from '../components/Nav/Nav';
+import Menu from '../components/Menu/Menu';
 
 import '../styles/Main.scss';
 
