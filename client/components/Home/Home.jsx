@@ -41,9 +41,9 @@ class Home extends Component {
           <p>High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
   
-          <button className="btn">
-          Learn more</button>
-  
+          <Link href={"/performance-strategy"}>
+            <span className="btn">Learn more</span>
+          </Link>
           </div>
           <div className="tile">
   

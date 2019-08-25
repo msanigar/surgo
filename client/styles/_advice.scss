@@ -1,0 +1,63 @@
+.advice-container {
+  background-color: $white;
+
+  .yellow-text {
+    color: $yellow
+  }
+
+  .yellow-bg {
+    background-color: $yellow
+  }
+
+  .green-text {
+    color: $green
+  }
+
+  .green-bg {
+    background-color: $green
+  }
+
+  .red-text {
+    color: $red;
+  }
+
+  .red-bg {
+    background-color: $red;
+  }
+
+  .top {
+    background-color: $black;
+    height: 100vh;
+
+    .text {
+      height: 50vh;
+      padding: 20vh 20vw 10vh 20vw;
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.2;
+        padding: 0;
+        margin: 0;
+        color: $white;
+      }
+  
+      h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+    }
+
+    .next {
+
+      width: 80vw;
+      margin: 0 auto;
+      min-height: 50vh;
+
+      .next-container {
+        padding: 2rem;
+        text-align: center;
+      }
+
+    }
+  }
+}
