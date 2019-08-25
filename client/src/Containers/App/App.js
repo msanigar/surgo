@@ -43,7 +43,7 @@ class App extends Component {
         <Router>
           <ScrollToTop>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
+            <Route path="/about" exact component={About} />
             <div className="app-container">
               <Nav toggle={this.toggleNav} />
               <Menu hide={this.toggleNav} show={this.state.navOpen} />
