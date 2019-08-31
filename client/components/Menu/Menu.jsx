@@ -33,12 +33,12 @@ const Menu = ({ show, hide }) => {
           <Link href={"/about"}><a>Buffed</a></Link>
           <Link href={"/about"}><a>Ultimate</a></Link>
           <h4>FAQ</h4>
-          <Link href={"/about"}><a>What is this?</a></Link>
-          <Link href={"/about"}><a>What is that?</a></Link>
-          <Link href={"/about"}><a>How much is it?</a></Link>
-          <Link href={"/about"}><a>Who does this work for?</a></Link>
-          <Link href={"/about"}><a>Do you sponsor teams?</a></Link>
-          <Link href={"/about"}><a>When is it available?</a></Link>
+          <Link href={"/faq"}><a>What is this?</a></Link>
+          <Link href={"/faq"}><a>What is that?</a></Link>
+          <Link href={"/faq"}><a>How much is it?</a></Link>
+          <Link href={"/faq"}><a>Who does this work for?</a></Link>
+          <Link href={"/faq"}><a>Do you sponsor teams?</a></Link>
+          <Link href={"/faq"}><a>When is it available?</a></Link>
         </div>
         <div className="menu-footer light-font">
           Copyright &copy; 2019- Surgo
