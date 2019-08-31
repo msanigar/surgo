@@ -13,6 +13,24 @@ class Nav extends Component {
     this.toggleNav = this.toggleNav.bind(this)
   }
 
+  // kinda hacky, if we navigate while menu open
+  // state changes but nothing calls the remove class on body
+  // > left unable to scroll
+
+  timer() {
+    if(!this.state.navOpen && document.body.classList.contains('noscroll')) { 
+      document.body.classList.remove('noscroll')
+    }
+  }
+
+  componentDidMount() {
+    this.intervalId = setInterval(this.timer.bind(this), 1000);
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.intervalId);
+  }
+ 
   toggleNav = () => {
 
     // bit of a race condition here..

@@ -20,7 +20,7 @@
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 15px 40px;
+  padding: 10px 40px;
   display: inline-block;
   margin: 10px 20px;
   text-decoration: none;
@@ -56,6 +56,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .book-font {
+    font-family: -apple-system, BlinkMacSystemFont, "CamptonBook", "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   }

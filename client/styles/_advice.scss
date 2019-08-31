@@ -27,11 +27,10 @@
 
   .top {
     background-color: $black;
-    height: 100vh;
 
     .text {
       height: 50vh;
-      padding: 20vh 20vw 10vh 20vw;
+      padding: 20vh 15vw 10vh 15vw;
 
       p {
         font-size: 1.25rem;
@@ -42,7 +41,7 @@
       }
   
       h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.2;
       }
     }
@@ -51,13 +50,183 @@
 
       width: 80vw;
       margin: 0 auto;
-      min-height: 50vh;
 
       .next-container {
         padding: 2rem;
         text-align: center;
+
+        svg {
+          margin: 1rem 0;
+        }
+
+        .next-text {
+          text-align: left;
+          padding-bottom: 2rem;
+
+          h4 {
+            font-size: 1.75rem;
+            margin: 2rem 0;
+            line-height: 1.2;
+          }
+
+          hr {
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 4px;
+            width: 100%;
+            margin: 1rem 0;
+          }
+        }
       }
 
+    }
+  }
+
+  .middle {
+    padding: 4rem 1rem 2rem 1rem;
+  
+    h2 {
+      font-size: 1.75rem;
+      padding: 0 1rem;
+    }
+
+    span {
+      background: $light-blue;
+      padding: 1rem;
+      margin: 2rem 1rem;
+      text-align: center;
+      line-height: 1.2;
+      display: block;
+
+      h3 {
+        font-size: 1.25rem;
+        margin: 1rem 0;
+      }
+    }
+
+    div {
+      &.black {
+        background-color: $black;
+        padding: 2rem;
+        p {
+          text-align: center;
+          margin-bottom: 1rem;
+          padding: 1rem;
+          line-height: 1.2;
+        }
+      }
+    }
+    div {
+      &:not(.black) {
+        padding: 3rem 1rem 1rem 1rem;
+        text-align: center;
+        h3 {
+          font-size: 1.5rem;
+        }
+        span {
+          h4 {
+            font-size: 1.25rem;
+          }
+          p {
+            text-align: center;
+            line-height: 1.2;
+            font-weight: 700;
+          }
+          .btn {
+            color: $black;
+            border-color: $black;
+            padding: 5px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    margin-bottom: 10vh;
+    
+    .signup {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      padding: 1rem 3rem;
+      line-height: 3rem;
+      position: relative;
+      min-height: 30vh;
+      
+  
+      h3 {
+        color: $black;
+        font-size: 1.5rem;
+      }
+  
+      .btn-container {
+        width: 100%;
+        height: 10vh;
+        padding-top: 2rem;
+        text-align: left;
+  
+        .btn {
+          font-size: 1rem;
+          margin: 0;
+          color: $black;
+          border-color: $black;
+        }
+      }
+      input {
+        &::-webkit-input-placeholder {
+          color: $black;
+        }
+  
+        &::-moz-placeholder {
+          color: $black;
+        }
+  
+        &::-ms-placeholder {
+          color: $black;
+        }
+  
+        &::placeholder {
+          color: $black;
+        }
+  
+        background-color: transparent;
+        border: none;
+        color: $black;
+        border-bottom: 1px solid $black;
+        border-radius: 0;
+        outline: none;
+        height: 3rem;
+        width: 100%;
+        font-size: 16px;
+        margin: 2rem 0 8px 0;
+        padding: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+        transition: border 0.3s, -webkit-box-shadow 0.3s;
+        transition: box-shadow 0.3s, border 0.3s;
+        transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+      }
+    }
+
+    .bottom-footer {
+      padding: 8rem 2rem;
+      background-color: $black;
+
+      .btn {
+        padding: 5px 30px;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        margin: 2rem 0 3rem 0;
+        line-height: 1.2;
+        color: $white;
+      }
     }
   }
 }

@@ -5,7 +5,7 @@ import Chevron from '../components/SVG/Chevron';
 
 import '../styles/Main.scss';
 
-class PerformanceStrategy extends Component {
+class HabitHacking extends Component {
   constructor(props) {
     super(props);
   }
@@ -18,16 +18,17 @@ class PerformanceStrategy extends Component {
           <div className="top">
             <div className="text">
               <p>The problem is</p>
-              <h2 className="yellow-text book-font">Esports athletes see their inconsistent performance solely as a gameplay issue.</h2>
+              <h2 className="green-text book-font">The problem is
+              Esports athletes currently develope unhealthy habits that  hinder their success as an ath-lete dramatically</h2>
             </div>
-            <div className="next yellow-bg book-font">
+            <div className="next green-bg book-font">
               <div className="next-container">
                 <p>How we solve this</p>
                 <Chevron />
                 <div className="next-text">
-                  <p>Performance Strategy</p>
+                  <p>Habit Hacking</p>
                   <hr></hr>
-                  <h4>We comprehend-sively diagnose each players bodily needs.</h4>
+                  <h4>We create healthy habits to replace the old ones.</h4>
                   <p>As a starting point.</p>
                 </div>
               </div>
@@ -36,27 +37,27 @@ class PerformanceStrategy extends Component {
           <div className="middle book-font">
             <h2>How does this help players</h2>
             <span>
-              <h3>Dietary needs</h3>
-              <p>Everyone is different, so by understanding the players inspanidually and their bodies needs.  We can develop guidelines that are easy for every player.</p>
+              <h3>Happy players</h3>
+              <p>Bad habits, don't just stop you being good, they stop you feeling good. By rebuilding new habits, players feel more confident in their ability to correct mistakes.</p>
             </span>
             <span>
-              <h3>Travelling efficiently</h3>
-              <p>Long travel days have a profound effect on the body  - often aggravating symptoms of Stress induced Anxiety which effect a players ability to communicate and focus in game. </p>
+              <h3>Better problem solvers</h3>
+              <p>Players become better problem solves - once they know how to actively fix habits outside of the game. They learn to apply this knowledge inside the game.</p>
             </span>
             <span>
-              <h3>Caffeine Consumption</h3>
-              <p>Whilst caffeine stimulates brain activity, used incorrectly can have an adverse effect on the body - prolonging the stress your body feels.</p>
+              <h3>Better communicators</h3>
+              <p>Players are able to comfortably navigate the communication & cultural barriers that once effected their performance.</p>
             </span>
             <span>
-              <h3>Motivation</h3>
-              <p>Motivation is a psychological phenomenon that is directly influenced by our dietary needs, sleeping habits, body image and more.
+              <h3>Precision focus</h3>
+              <p>Players become more focused allowing them to retain more information from practice and apply it in game more efficiently.
             </p>
             </span>
             <div className="black">
-              <p className="yellow-text book-font">
-                Our performance strategy is designed to turn what we think, say and motivates us into real, productive results.
+              <p className="green-text book-font">
+              Accountability is designed to give players full control over their lives by training them to structure it more efficiently.
             </p>
-              <p className="yellow-text book-font">Players who follow our performance strategy see a dramatic improvement in their in-game performance within
+              <p className="green-text book-font">Players who account for their actions see a dramatic improvement in their in-game performance within
               3-6 months.
             </p>
             </div>
@@ -86,7 +87,7 @@ class PerformanceStrategy extends Component {
             </div>
           </div>
           <div className="bottom">
-            <div className="signup yellow-bg">
+            <div className="signup green-bg">
               <h3 className="menu-beta">Join the beta</h3>
               <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
               <div className="btn-container">
@@ -96,7 +97,7 @@ class PerformanceStrategy extends Component {
               </div>
             </div>
             <div className="bottom-footer">
-              <p className="yellow-text">Did this section help at all?</p>
+              <p className="green-text">Did this section help at all?</p>
               <h3>If you still have questions - check out our FAQ or contact us.</h3>
               <div className="btn-container">
                 <button
@@ -115,4 +116,4 @@ class PerformanceStrategy extends Component {
   }
 }
 
-export default PerformanceStrategy;
+export default HabitHacking;

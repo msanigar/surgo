@@ -11,3 +11,10 @@
   src: url("./Fonts/CamptonLight.eot?#iefix") format("embedded-opentype"), url("./Fonts/CamptonLight.woff2") format("woff2"),
     url("./Fonts/CamptonLight.woff") format("woff"), url("./Fonts/CamptonLight.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "CamptonBook";
+  src: url("./Fonts/CamptonBook.eot");
+  src: url("./Fonts/CamptonBook.eot?#iefix") format("embedded-opentype"), url("./Fonts/CamptonBook.woff2") format("woff2"),
+    url("./Fonts/CamptonBook.woff") format("woff"), url("./Fonts/CamptonBook.ttf") format("truetype");
+}

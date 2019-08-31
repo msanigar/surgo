@@ -5,7 +5,7 @@ import Chevron from '../components/SVG/Chevron';
 
 import '../styles/Main.scss';
 
-class PerformanceStrategy extends Component {
+class Accountability extends Component {
   constructor(props) {
     super(props);
   }
@@ -18,16 +18,19 @@ class PerformanceStrategy extends Component {
           <div className="top">
             <div className="text">
               <p>The problem is</p>
-              <h2 className="yellow-text book-font">Esports athletes see their inconsistent performance solely as a gameplay issue.</h2>
+              <h2 className="red-text book-font">The problem is
+              Esports athletes are not actively trying to take control of their hectic schedule.</h2>
             </div>
-            <div className="next yellow-bg book-font">
+            <div className="next red-bg book-font">
               <div className="next-container">
                 <p>How we solve this</p>
                 <Chevron />
                 <div className="next-text">
-                  <p>Performance Strategy</p>
+                  <p>Accountability</p>
                   <hr></hr>
-                  <h4>We comprehend-sively diagnose each players bodily needs.</h4>
+                  <h4>We give players
+                  the tools and knowledge to
+                  take control.</h4>
                   <p>As a starting point.</p>
                 </div>
               </div>
@@ -36,28 +39,30 @@ class PerformanceStrategy extends Component {
           <div className="middle book-font">
             <h2>How does this help players</h2>
             <span>
-              <h3>Dietary needs</h3>
-              <p>Everyone is different, so by understanding the players inspanidually and their bodies needs.  We can develop guidelines that are easy for every player.</p>
+              <h3>Staying in control</h3>
+              <p>Our holistic philosophy helps players find their own way to balance sleep, practice, eating and exercise. </p>
             </span>
             <span>
-              <h3>Travelling efficiently</h3>
-              <p>Long travel days have a profound effect on the body  - often aggravating symptoms of Stress induced Anxiety which effect a players ability to communicate and focus in game. </p>
+              <h3>Healthy body</h3>
+              <p>Having accountability allows players to learn what works for them, allowing them to maximize their game time without compromising their bodies.</p>
             </span>
             <span>
-              <h3>Caffeine Consumption</h3>
-              <p>Whilst caffeine stimulates brain activity, used incorrectly can have an adverse effect on the body - prolonging the stress your body feels.</p>
+              <h3>Keep record</h3>
+              <p>Players make it a habit to keep track of their dietary intake , exercise and active schedule so they never feel like they are forgetting something.</p>
             </span>
             <span>
-              <h3>Motivation</h3>
-              <p>Motivation is a psychological phenomenon that is directly influenced by our dietary needs, sleeping habits, body image and more.
+              <h3>SoS Meetings</h3>
+              <p>When things take an unexpected turn - our SoS meetings will help players compartmentalise problems into easy to tackle chunks - making them more efficient.
+
             </p>
             </span>
             <div className="black">
-              <p className="yellow-text book-font">
-                Our performance strategy is designed to turn what we think, say and motivates us into real, productive results.
+              <p className="red-text book-font">
+                Accountability is designed to give players full control over their lives by training them to structure it more efficiently.
             </p>
-              <p className="yellow-text book-font">Players who follow our performance strategy see a dramatic improvement in their in-game performance within
+              <p className="red-text book-font">Players who account for their actions see a dramatic improvement in their in-game performance within
               3-6 months.
+
             </p>
             </div>
             <div>
@@ -86,7 +91,7 @@ class PerformanceStrategy extends Component {
             </div>
           </div>
           <div className="bottom">
-            <div className="signup yellow-bg">
+            <div className="signup red-bg">
               <h3 className="menu-beta">Join the beta</h3>
               <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
               <div className="btn-container">
@@ -96,7 +101,7 @@ class PerformanceStrategy extends Component {
               </div>
             </div>
             <div className="bottom-footer">
-              <p className="yellow-text">Did this section help at all?</p>
+              <p className="red-text">Did this section help at all?</p>
               <h3>If you still have questions - check out our FAQ or contact us.</h3>
               <div className="btn-container">
                 <button
@@ -115,4 +120,4 @@ class PerformanceStrategy extends Component {
   }
 }
 
-export default PerformanceStrategy;
+export default Accountability;
