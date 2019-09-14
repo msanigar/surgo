@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import fetch from "isomorphic-unfetch";
 
-import "../styles/main.scss";
+import "../styles/Main.scss";
 
 class Blog extends Component {
   constructor(props) {
