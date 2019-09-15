@@ -11,6 +11,13 @@ class Blog extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    // due to funkly race condition
+    if(document.body.classList.contains('noscroll')) { 
+      document.body.classList.remove('noscroll')
+    }
+  }
+
   render() {
     return (
       <div className="blog-container">
