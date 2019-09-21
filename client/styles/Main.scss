@@ -72,4 +72,11 @@
   .noscroll {
     overflow: hidden;
   }
-  
+
+  .desktop-only {
+    @include mobile { display: none; }
+  }
+
+  .mobile-only {
+    @include desktop { display: none; }
+  }

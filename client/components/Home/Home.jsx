@@ -5,6 +5,7 @@ import Link from "next/link";
 import Strategy from '../SVG/Strategy/Strategy';
 import Habit from '../SVG/Habithacking/Habithacking';
 import Accountability from '../SVG/Accountability';
+import Nav from '../Nav';
 
 class Home extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Home extends Component {
         <div className="home home-1">
           <h2>There is <span>more</span> to Esports than just <span>winning</span> games.</h2>
         </div>
-  
+        <Nav mode="desktop"></Nav>
         <div className="home home-2">
           <h3 className="home-title">Surgo means</h3>
           <hr />

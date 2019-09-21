@@ -49,8 +49,8 @@ class Nav extends Component {
 
   render() {
     return (
-        <div className="app-container">
-          <NavButton toggle={this.toggleNav} />
+      <div className="app-container">
+          <NavButton toggle={this.toggleNav} mode={this.props.mode === 'desktop' ? 'desktop' : 'mobile'} />
           <Menu hide={this.toggleNav} show={this.state.navOpen} />
         </div>
     )

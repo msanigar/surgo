@@ -1,5 +1,9 @@
 .home {
     min-height: 100vh;
+
+    @include desktop {    
+      min-height: 50vh; 
+   }
 }
 
 .home-1 {
