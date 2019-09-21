@@ -13,6 +13,19 @@ import Nav from '../Nav';
 class Home extends Component {
   constructor(props) {
     super(props);
+
+    this.handleOnSlideChange = this.handleOnSlideChange.bind(this)
+
+    this.state = {
+      curr: 1,
+      total: 5
+    }
+  }
+
+  handleOnSlideChange(o) {
+    this.setState({
+      curr: o.slide + 1
+    })
   }
 
   render() {
@@ -95,13 +108,15 @@ class Home extends Component {
           </div>
           <div className="container alice desktop-only">
         <h4>Endorsed by</h4>
-          <AliceCarousel mouseDragEnabled >
+          <AliceCarousel mouseDragEnabled autoPlay="true" autoPlayInterval="2500" dotsDisabled buttonsDisabled 
+          onSlideChanged={this.handleOnSlideChange}>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
           </AliceCarousel>
+          <h4>{`0${this.state.curr} | 0${this.state.total}`}</h4>
         </div>
         </div>
         <div className="home home-5">
