@@ -14,7 +14,6 @@ class Index extends Component {
     return (
       <React.Fragment>
         <Home />
-        <Nav />
       </React.Fragment>
     )
   }

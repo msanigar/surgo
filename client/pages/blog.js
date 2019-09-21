@@ -39,7 +39,6 @@ class Blog extends Component {
           let formattedDate = newDate.replace(', ', ' at ')
           return (
             <div className="blog-post" key={i}>
-              {console.log(post)}
               <h2> {post.title.rendered} </h2>
               <span className="content book-font" dangerouslySetInnerHTML={{ __html: post.content.rendered }}></span>
               <span className="meta">Posted by <em>{post.author_meta.user_nicename}</em><br /> on <em>{ formattedDate }</em></span>

@@ -38,7 +38,7 @@ class Home extends Component {
         <div className="home home-1">
           <h2>There is <span>more</span> to Esports than just <span>winning</span> games.</h2>
         </div>
-        <Nav mode="desktop"></Nav>
+        <Nav></Nav>
         <div className="home home-2">
           <h3 className="home-title">Surgo means</h3>
           <hr />
@@ -108,7 +108,7 @@ class Home extends Component {
           </div>
           <div className="container alice desktop-only">
         <h4>Endorsed by</h4>
-          <AliceCarousel mouseDragEnabled autoPlay="true" autoPlayInterval="2500" dotsDisabled buttonsDisabled 
+          <AliceCarousel mouseDragEnabled autoPlay autoPlayInterval={2500} dotsDisabled buttonsDisabled 
           onSlideChanged={this.handleOnSlideChange}>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
             <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>

@@ -17,14 +17,12 @@ class Nav extends Component {
   // state changes but nothing calls the remove class on body
   // > left unable to scroll
 
-  timer() {
-    if(!this.state.navOpen && document.body.classList.contains('noscroll')) { 
-      document.body.classList.remove('noscroll')
-    }
-  }
-
   componentDidMount() {
-    this.intervalId = setInterval(this.timer.bind(this), 1000);
+    this.intervalId = setInterval(() => {
+      if(!this.state.navOpen && document.body.classList.contains('noscroll')) { 
+        document.body.classList.remove('noscroll')
+      }
+    }, 1000);
   }
 
   componentWillUnmount(){
@@ -42,15 +40,17 @@ class Nav extends Component {
       document.body.classList.remove('noscroll');
     }
 
-    this.setState({
-      navOpen: !this.state.navOpen
-    })
+    setTimeout(() => {
+      this.setState({
+        navOpen: !this.state.navOpen
+      })
+    }, 25)
   }
 
   render() {
     return (
       <div className="app-container">
-          <NavButton toggle={this.toggleNav} mode={this.props.mode === 'desktop' ? 'desktop' : 'mobile'} />
+          <NavButton toggle={this.toggleNav} />
           <Menu hide={this.toggleNav} show={this.state.navOpen} />
         </div>
     )

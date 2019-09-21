@@ -1,8 +1,8 @@
 import React from 'react';
 
-const NavButton = ({ toggle, mode }) => {
+const NavButton = ({ toggle }) => {
     return (
-        <div className={`nav ${mode === 'desktop' ? 'desktop desktop-only' : 'mobile-only'}`}>
+        <div className="nav">
             <div className="nav-logo">
                 <p>Surgo</p> 
             </div>
