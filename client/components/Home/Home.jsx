@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import Link from "next/link";
 
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 import Strategy from '../SVG/Strategy/Strategy';
 import Habit from '../SVG/Habithacking/Habithacking';
 import Accountability from '../SVG/Accountability';
@@ -13,6 +16,9 @@ class Home extends Component {
   }
 
   render() {
+
+    const handleOnDragStart = e => e.preventDefault()
+
     return (
       <div>
   
@@ -77,7 +83,7 @@ class Home extends Component {
         </div>
   
         <div className="home home-4">
-          <div className="container">
+          <div className="container mobile-only">
             <h4>Endorsed by</h4>
             <h4 className="company">Company&Co.</h4>
             <hr></hr>
@@ -87,8 +93,17 @@ class Home extends Component {
             <hr></hr>
             <h4 className="company">Company&Co.</h4>
           </div>
+          <div className="container alice desktop-only">
+        <h4>Endorsed by</h4>
+          <AliceCarousel mouseDragEnabled >
+            <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
+            <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
+            <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
+            <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
+            <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
+          </AliceCarousel>
         </div>
-  
+        </div>
         <div className="home home-5">
           <div className="home-beta">
             <h3 className="home-beta-title">Join the beta</h3>

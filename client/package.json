@@ -23,6 +23,7 @@
     "postcss-flexbugs-fixes": "^4.0.0",
     "postcss-loader": "^2.1.6",
     "react": "^16.8.6",
+    "react-alice-carousel": "^1.15.3",
     "react-dom": "^16.8.6",
     "sass-loader": "^7.0.3"
   },

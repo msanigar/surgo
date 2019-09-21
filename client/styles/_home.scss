@@ -2,8 +2,8 @@
     min-height: 100vh;
 
     @include desktop {    
-      min-height: 50vh; 
-   }
+      min-height: 90vh;
+    }
 }
 
 .home-1 {
@@ -17,6 +17,13 @@
         font-weight: 500;
         line-height: 1.125;
 
+        @include desktop {    
+          padding-top: 40vh;
+          padding-left: 10vw;
+          text-align: left;
+          font-size: 5rem;
+        }
+
         span {
             color: $white;
         }
@@ -27,6 +34,11 @@
     background: $blue;
     width: 90vw;
     margin: 0 auto;
+
+    @include desktop {    
+      max-height: 50vh;
+      min-height: 25vh;
+    }
 
     .btn-container {
         width: 100%;
@@ -86,15 +98,34 @@
     padding: 2rem;
     text-align: center;
 
+    @include desktop {    
+      min-height: 30vh;
+      text-align: left;
+      padding-left: 4rem;
+
+      svg {
+        display: none;
+      }
+    }
+
     .tile-title {
       font-size: 1.25rem;
       font-weight: 700;
       padding: 2rem 0;
+
+      @include desktop {    
+        max-width: 50%;
+        padding-left: 2rem;
+      }
     }
 
     p {
       line-height: 1.5;
       margin-bottom: 2rem;
+
+      @include desktop {    
+        max-width: 50%;
+      }
     }
 
     .btn {
@@ -115,6 +146,17 @@
       span {
           color: $white;
       }
+  }
+}
+
+.alice {
+  .item {
+    min-height: 300px;
+    width: 100%;
+    background: $black;
+  }
+  .alice-carousel__prev-btn {
+    text-align: center;
   }
 }
 
