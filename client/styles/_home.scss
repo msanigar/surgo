@@ -8,6 +8,11 @@
 
 .home-1 {
     background: $dark-blue;
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
     
     h2 {
         padding: 6rem 2rem;
@@ -18,10 +23,11 @@
         line-height: 1.125;
 
         @include desktop {    
-          padding-top: 40vh;
+          padding-top: 0;
           padding-left: 10vw;
           text-align: left;
-          font-size: 5rem;
+          font-size: 6rem;
+          max-width: 70%;
         }
 
         span {
