@@ -4,6 +4,8 @@ import fetch from "isomorphic-unfetch";
 import Back from '../components/SVG/Back';
 import Chevron from '../components/SVG/Chevron';
 
+import Post from '../components/Post'
+
 import "../styles/Main.scss";
 
 class Blog extends Component {
@@ -34,17 +36,12 @@ class Blog extends Component {
           <p>Read our blog</p>
           <Chevron />
           </div>
-        {this.props.wpData.posts.map((post, i) => {
-          let newDate = (new Date(post.date)).toLocaleString();
-          let formattedDate = newDate.replace(', ', ' at ')
-          return (
-            <div className="blog-post" key={i}>
-              <h2> {post.title.rendered} </h2>
-              <span className="content book-font" dangerouslySetInnerHTML={{ __html: post.content.rendered }}></span>
-              <span className="meta">Posted by <em>{post.author_meta.user_nicename}</em><br /> on <em>{ formattedDate }</em></span>
-            </div>
-          )
-        })}
+          { this.props.wpData.posts.map((post, i) => {
+            let newDate = (new Date(post.date)).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' });
+            return (
+              <Post key={i} date={newDate} post={post} />
+            )
+          }) }
       </div>
     );
   }

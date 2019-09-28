@@ -68,13 +68,13 @@
     h2 {
         color: $white;
         text-align: center;
-        font-size: 2.75rem;
-        font-weight: 700;
+        font-size: 2.5rem;
+        font-weight: 500;
     }
     
     h3 {
         color: $white;
-        font-size: 2rem;
+        font-size: 1.75rem;
         text-align: center;
         
         &.home-title {
@@ -86,7 +86,7 @@
     p {
         color: $white;
         margin: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
         line-height: 1.4;
         font-weight: 200;
@@ -121,7 +121,6 @@
 
     .tile-title {
       font-size: 1.25rem;
-      font-weight: 700;
       padding: 2rem 0;
 
       @include desktop {    
@@ -141,7 +140,7 @@
 
     .btn {
       max-width: 180px;
-      padding: 5px 30px;
+      padding: 12px 30px;
       color: $black;
       border-color: $grey;
     }
@@ -151,7 +150,6 @@
       color: $black;
       font-size: 2rem;
       padding: 3rem 0 2rem 0;
-      font-weight: 700;
       text-align: center;
 
       span {
@@ -172,8 +170,12 @@
     h4 {
       text-align: center;
       margin-top: 2rem;
-      font-size: 3rem;
+      font-size: 1.5rem;
       color: $white;
+
+      @include desktop {
+        font-size: 3rem;
+      }
     }
   }
   .alice-carousel__prev-btn {
@@ -186,7 +188,7 @@
   margin: 0 auto;
   color: $white;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   min-height: 60vh;
 
   @include desktop {    
@@ -212,15 +214,26 @@
 }
 
 .home-5 {
-  height: 30vh;
   min-height: 30vh;
-  background-color: $blue;
-  padding: 2rem;
+  margin: 0 auto;
   color: $white;
+  max-width: 90vw;
+  margin-top: 1rem;
 
   .home-beta-title {
     font-size: 1.25rem;
     font-weight: 700;
+    padding: 2rem 0 0 2rem;
+  }
+
+  .home-latest {
+    color: $black;
+
+    h3 {
+      padding: 2.5rem 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
   }
 
   .btn {
@@ -229,6 +242,8 @@
   }
 
   .home-beta {
+    background-color: $blue;
+    height: 30vh;
     input {
       &::-webkit-input-placeholder {
         color: $white;
@@ -253,10 +268,9 @@
       border-radius: 0;
       outline: none;
       height: 3rem;
-      width: 100%;
+      width: 75%;
       font-size: 16px;
-      margin: 2rem 0 8px 0;
-      padding: 0;
+      margin: 2rem 1rem 1rem 2rem;
       -webkit-box-shadow: none;
       box-shadow: none;
       -webkit-box-sizing: content-box;

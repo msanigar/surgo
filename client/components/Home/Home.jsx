@@ -9,6 +9,7 @@ import Strategy from '../SVG/Strategy/Strategy';
 import Habit from '../SVG/Habithacking/Habithacking';
 import Accountability from '../SVG/Accountability';
 import Nav from '../Nav';
+import Post from '../Post';
 
 class Home extends Component {
   constructor(props) {
@@ -40,10 +41,10 @@ class Home extends Component {
         </div>
         <Nav></Nav>
         <div className="home home-2">
-          <h3 className="home-title">Surgo means</h3>
+          <h3 className="home-title book-font">Surgo means</h3>
           <hr />
-          <h2>To rise up, to climb, to move upwards</h2>
-          <p>Our programmes provide teams with the knowledge, tools and support they need to develop their players into professional athletes.</p>
+          <h2 className="book-font">To rise up, to climb, to move upwards</h2>
+          <p className="book-font">Our programmes provide teams with the knowledge, tools and support they need to develop their players into professional athletes.</p>
           <div className="btn-container">
             <Link href={"/about"}>
               <span className="btn">About Surgo</span>
@@ -96,17 +97,7 @@ class Home extends Component {
         </div>
   
         <div className="home home-4">
-          <div className="container mobile-only">
-            <h4>Endorsed by</h4>
-            <h4 className="company">Company&Co.</h4>
-            <hr></hr>
-            <h4 className="company">Company&Co.</h4>
-            <hr></hr>
-            <h4 className="company">Company&Co.</h4>
-            <hr></hr>
-            <h4 className="company">Company&Co.</h4>
-          </div>
-          <div className="container alice desktop-only">
+          <div className="container alice">
         <h4>Endorsed by</h4>
           <AliceCarousel mouseDragEnabled autoPlay autoPlayInterval={2500} dotsDisabled buttonsDisabled 
           onSlideChanged={this.handleOnSlideChange}>
@@ -129,6 +120,15 @@ class Home extends Component {
                 Sign up
               </button>
             </div>
+          </div>
+          <div className="home-latest">
+            <h3>News from the team</h3>
+            { this.props.latest.posts.map((post, i) => {
+              let newDate = (new Date(post.date)).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' });
+              return (
+                <Post key={i} date={newDate} post={post} />
+              )
+            }) }
           </div>
         </div>
   
