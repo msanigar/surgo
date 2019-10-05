@@ -45,9 +45,16 @@
 
   @include desktop {
     display: flex;
-    flex-direction: row;
     min-height: 62vh;
     margin-bottom: 0;
+
+    .menu-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
   }
 
   .menu-content-box {
@@ -101,6 +108,7 @@
       min-height: 12.5vh;
       display: flex;
       flex-direction: row;
+      padding: 2rem 12rem;
 
       .menu-beta,
       input,
@@ -182,7 +190,7 @@
   .cross {
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 10rem;
     width: 50px;
     height: 50px;
     border: 1px solid $grey;

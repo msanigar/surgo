@@ -25,6 +25,7 @@ const Menu = ({ show, hide }) => {
           </div>
         </div>
         <div className="menu-content">
+          <div className="menu-wrapper">
           <div className="menu-content-box">
           <h4>Surgo</h4>
             <Link href={"/about"}><a>About us</a></Link>
@@ -45,6 +46,7 @@ const Menu = ({ show, hide }) => {
           <Link href={"/faq"}><a>Who does this work for?</a></Link>
           <Link href={"/faq"}><a>Do you sponsor teams?</a></Link>
           <Link href={"/faq"}><a>When is it available?</a></Link>
+         </div>
          </div>
         </div>
         <div className="menu-footer light-font">
