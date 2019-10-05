@@ -75,7 +75,7 @@ class Home extends Component {
             <Strategy />
 
             <h4 className="tile-title">Performance Strategy</h4>
-            <p>High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
+            <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
             <Link href={"/performance-strategy"}>
@@ -87,8 +87,7 @@ class Home extends Component {
             <Accountability />
 
             <h4 className="tile-title">Accountability</h4>
-            <h4 className="tile-title">Performance Strategy</h4>
-            <p>High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
+            <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
             <Link href={"/accountability"}>
@@ -101,8 +100,7 @@ class Home extends Component {
             <Habit />
 
             <h4 className="tile-title">Habit Hacking</h4>
-            <h4 className="tile-title">Performance Strategy</h4>
-            <p>High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
+            <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
             <Link href={"/habit-hacking"}>
