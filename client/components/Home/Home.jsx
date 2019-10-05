@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Link from "next/link";
-
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
@@ -10,6 +8,8 @@ import Habit from '../SVG/Habithacking/Habithacking';
 import Accountability from '../SVG/Accountability';
 import Nav from '../Nav';
 import Post from '../Post';
+import Button from '../Button'
+import Signup from '../Signup'
 
 class Home extends Component {
   constructor(props) {
@@ -62,9 +62,7 @@ class Home extends Component {
           <h2 className="book-font">To rise up, to climb, to move upwards</h2>
           <p className="book-font">Our programmes provide teams with the knowledge, tools and support they need to develop their players into professional athletes.</p>
           <div className="btn-container">
-            <Link href={"/about"}>
-              <span className="btn">About Surgo</span>
-            </Link>
+            <Button link={'about'} text={'About Surgo'} />
           </div>
         </div>
 
@@ -78,9 +76,10 @@ class Home extends Component {
             <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
-            <Link href={"/performance-strategy"}>
-              <span className="btn">Learn more</span>
-            </Link>
+          <div className="btn-container">
+          <Button text={'Learn more'} link={'performance-strategy'} theme={'dark'} />
+          </div>
+          
           </div>
           <div className="tile">
 
@@ -90,9 +89,9 @@ class Home extends Component {
             <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
-            <Link href={"/accountability"}>
-              <span className="btn">Learn more</span>
-            </Link>
+          <div className="btn-container">
+          <Button text={'Learn more'} link={'accountability'} theme={'dark'} />
+          </div>
 
           </div>
           <div className="tile">
@@ -103,9 +102,9 @@ class Home extends Component {
             <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
-            <Link href={"/habit-hacking"}>
-              <span className="btn">Learn more</span>
-            </Link>
+          <div className="btn-container">
+          <Button text={'Learn more'} link={'habit-hacking'} theme={'dark'} />
+          </div>
 
           </div>
         </div>
@@ -126,14 +125,7 @@ class Home extends Component {
         </div>
         <div className="home home-5">
           <div className="home-beta">
-            <h3 className="home-beta-title">Join the experience</h3>
-            <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
-
-            <div className="btn-container">
-              <button className="btn">
-                Sign up
-              </button>
-            </div>
+            <Signup />
           </div>
           <div className="home-latest">
             <h3>News from the team</h3>
@@ -151,11 +143,12 @@ class Home extends Component {
         <div className="home home-6">
           <p className="top">Looks like you've hit rock bottom.</p>
           <h2 className="middle">Now it's time to take action.</h2>
-          <div className="btn-container" onClick={() => this.scrollUp()}>
-            <button className="btn">
-              Start the climb
-              </button>
+          <span onClick={() => this.scrollUp()}>
+          <div className="btn-container">
+          <Button text={'start the climb'} />
           </div>
+          </span>
+
         </div>
       </div>
     )

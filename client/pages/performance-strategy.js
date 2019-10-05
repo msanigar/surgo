@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Nav from '../components/Nav';
-
+import Button from '../components/Button';
+import Signup from '../components/Signup';
 import Chevron from '../components/SVG/Chevron';
 
 import '../styles/Main.scss';
@@ -65,46 +66,37 @@ class PerformanceStrategy extends Component {
               <span>
                 <p>June 2019</p>
                 <h4>The World of Caffeine</h4>
-                <button className="btn">
-                  Read study
-              </button>
+                <div className="btn-container">
+                <Button theme="dark" text="Read study" />
+               </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Essential Oils</h4>
-                <button className="btn">
-                  Read study
-              </button>
+                <div className="btn-container">
+                <Button theme="dark" text="Read study" />
+               </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Sleep vs. Esports</h4>
-                <button className="btn">
-                  Read study
-              </button>
+                <div className="btn-container">
+                <Button theme="dark" text="Read study" />
+               </div>
               </span>
             </div>
           </div>
           <div className="bottom">
             <div className="signup yellow-bg">
-              <h3 className="menu-beta">Join the beta</h3>
-              <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
-              <div className="btn-container">
-                <button className="btn">
-                  Sign up
-                </button>
-              </div>
+              <Signup />
             </div>
             <div className="bottom-footer">
               <p className="yellow-text">Did this section help at all?</p>
               <h3>If you still have questions - check out our FAQ or contact us.</h3>
-              <div className="btn-container">
-                <button
-                  onClick={() => window.history.back()}
-                  className="btn"
+              <div className="btn-container"
+                onClick={() => window.history.back()}
                 >
-                  Go Back
-              </button>
+                <Button text="Go back" theme="light" />
               </div>
             </div>
           </div>

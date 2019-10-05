@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import Signup from '../Signup'
 
 import Close from '../SVG/Close';
 
@@ -8,15 +9,7 @@ const Menu = ({ show, hide }) => {
     <div className={show ? "menu open" : "menu"}>
       <div className="menu-container">
         <div className="menu-header">
-          <h2 className="menu-beta">Join the experience</h2>
-          <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
-
-          <div className="btn-container">
-            <button className="btn">
-              Sign up
-            </button>
-          </div>
-
+         <Signup />
           <div
             className="cross light-font"
             onClick={() => hide()}

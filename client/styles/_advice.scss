@@ -132,94 +132,53 @@
             line-height: 1.2;
             font-weight: 700;
           }
-          .btn {
-            color: $black;
-            border-color: $black;
-            padding: 5px 20px;
-          }
         }
       }
     }
   }
 
-  .bottom {
-    margin-bottom: 10vh;
-    
-    .signup {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: column;
-      padding: 1rem 3rem;
-      line-height: 3rem;
-      position: relative;
-      min-height: 30vh;
-      
-  
-      h3 {
-        color: $black;
-        font-size: 1.5rem;
-      }
-  
-      .btn-container {
-        width: 100%;
-        height: 10vh;
-        padding-top: 2rem;
-        text-align: left;
-  
-        .btn {
-          font-size: 1rem;
-          margin: 0;
-          color: $black;
-          border-color: $black;
-        }
-      }
-      input {
-        &::-webkit-input-placeholder {
-          color: $black;
-        }
-  
-        &::-moz-placeholder {
-          color: $black;
-        }
-  
-        &::-ms-placeholder {
-          color: $black;
-        }
-  
-        &::placeholder {
-          color: $black;
-        }
-  
-        background-color: transparent;
-        border: none;
-        color: $black;
-        border-bottom: 1px solid $black;
-        border-radius: 0;
-        outline: none;
-        height: 3rem;
-        width: 100%;
-        font-size: 16px;
-        margin: 2rem 0 8px 0;
-        padding: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
-        transition: border 0.3s, -webkit-box-shadow 0.3s;
-        transition: box-shadow 0.3s, border 0.3s;
-        transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+  .signup {
+
+    .title, h2, h3, a, button, input, .btn-container a{
+      color: $black;
+      border-color: $black;
+    }
+
+    ::-webkit-input-placeholder {
+      color: $black;
+    }
+    ::-moz-placeholder {
+      color: $black;
+    }
+    :-ms-input-placeholder {
+      color: $black;
+    }
+    :-moz-placeholder {
+      color: $black;
+    }
+
+    &.yellow-bg {
+      .signup {
+        background-color: $yellow;
       }
     }
+    &.red-bg {
+      .signup {
+        background-color: $red;
+      }
+    }
+    &.green-bg {
+      .signup {
+        background-color: $green;
+      }
+    }
+  }
+  .bottom {
+    margin-bottom: 10vh;
 
     .bottom-footer {
       padding: 8rem 2rem;
       background-color: $black;
-
-      .btn {
-        padding: 5px 30px;
-        margin: 0;
-      }
 
       h3 {
         font-size: 2.5rem;

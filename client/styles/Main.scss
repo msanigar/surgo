@@ -1,14 +1,16 @@
-@import './reset';
-@import './vars';
-@import './fonts';
-@import './about';
-@import './home';
-@import './menu';
-@import './nav';
-@import './advice';
-@import './faq';
-@import './blog';
-@import './contact';
+@import "./reset";
+@import "./vars";
+@import "./fonts";
+@import "./about";
+@import "./home";
+@import "./menu";
+@import "./nav";
+@import "./advice";
+@import "./faq";
+@import "./blog";
+@import "./contact";
+@import "./button";
+@import "./signup";
 
 .app-container {
   text-align: center;
@@ -16,67 +18,46 @@
   overflow: hidden;
 }
 
-.btn {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 10px 40px;
-  display: inline-block;
-  margin: 10px 20px;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "CamptonMedium", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light-font {
+  font-family: -apple-system, BlinkMacSystemFont, "CamptonLight", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.book-font {
+  font-family: -apple-system, BlinkMacSystemFont, "CamptonBook", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-link {
   text-decoration: none;
-  max-width: 160px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    color: #fff;
-    overflow: hidden;
+  color: inherit;
+}
 
-    &:hover {
-        color: darken(#fff, 25%);
-        border-color: darken(#fff, 25%);
-    }
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
 
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "CamptonMedium", "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .light-font {
-    font-family: -apple-system, BlinkMacSystemFont, "CamptonLight", "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .book-font {
-    font-family: -apple-system, BlinkMacSystemFont, "CamptonBook", "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+.noscroll {
+  overflow: hidden;
+}
 
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.desktop-only {
+  @include mobile {
+    display: none;
   }
-  
-  .noscroll {
-    overflow: hidden;
-  }
+}
 
-  .desktop-only {
-    @include mobile { display: none; }
+.mobile-only {
+  @include desktop {
+    display: none;
   }
-
-  .mobile-only {
-    @include desktop { display: none; }
-  }
+}

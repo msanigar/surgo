@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Back from '../components/SVG/Back';
 import Nav from '../components/Nav';
+import Button from '..//components/Button';
 
 
 import '../styles/Main.scss';
@@ -60,11 +61,9 @@ class Contact extends Component {
               maxLength="1000"
               cols="30"
               rows="5"></textarea>
-            <div className="btn-container">
-              <button className="btn">
-                Send Message
-            </button>
-            </div>
+              <div className="btn-container">
+                <Button text="Send Message" theme="dark" />
+              </div>
           </div>
 
         </div>

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Back from '../components/SVG/Back';
 import Jobs from '../components/SVG/Jobs';
 import Nav from '../components/Nav';
+import Signup from '../components/Signup'
 
 import Alex from '../styles/img/alex.png';
 import Gareth from '../styles/img/gareth.png';
@@ -52,14 +53,7 @@ class About extends Component {
             </div>
           </div>
           <div className="signup">
-            <h3 className="menu-beta">Join the beta</h3>
-            <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
-
-            <div className="btn-container">
-              <button className="btn">
-                Sign up
-         </button>
-            </div>
+            <Signup />
           </div>
         </div>
         <Nav />
