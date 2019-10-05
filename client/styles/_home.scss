@@ -333,9 +333,10 @@
         max-width: 500px;
       }
 
-      .home-beta-title {
-        flex: 2;
-        text-align: center;
+      .signup {
+        .title {
+          flex: 3;
+        }
       }
     }
   }
