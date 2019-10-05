@@ -15,3 +15,5 @@ $green: #339A5E;
 @mixin mobile {
   @media (max-width: 767px) { @content; }
 }
+
+$screenWidth: 1600px;

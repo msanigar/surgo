@@ -8,8 +8,7 @@ const Menu = ({ show, hide }) => {
     <div className={show ? "menu open" : "menu"}>
       <div className="menu-container">
         <div className="menu-header">
-          <h2 className="menu-title">Surgo</h2>
-          <h3 className="menu-beta">Join the beta</h3>
+          <h2 className="menu-beta">Join the experience</h2>
           <input placeholder="Enter your email address here" id="email" type="text" className="validate" />
 
           <div className="btn-container">
@@ -26,20 +25,27 @@ const Menu = ({ show, hide }) => {
           </div>
         </div>
         <div className="menu-content">
-          <Link href={"/about"}><a>About us</a></Link>
-          <Link href={"/contact"}><a>Contact</a></Link>
-          <Link href={"/blog"}><a>Blog</a></Link>
+          <div className="menu-content-box">
+          <h4>Surgo</h4>
+            <Link href={"/about"}><a>About us</a></Link>
+            <Link href={"/contact"}><a>Contact</a></Link>
+            <Link href={"/blog"}><a>Blog</a></Link>
+          </div>
+          <div className="menu-content-box">
           <h4>Programmes</h4>
-          <Link href={"/about"}><a>Starter</a></Link>
-          <Link href={"/about"}><a>Buffed</a></Link>
-          <Link href={"/about"}><a>Ultimate</a></Link>
-          <h4>FAQ</h4>
+            <Link href={"/about"}><a>Starter</a></Link>
+            <Link href={"/about"}><a>Buffed</a></Link>
+            <Link href={"/about"}><a>Ultimate</a></Link>
+          </div>
+         <div className="menu-content-box">
+         <h4>FAQ</h4>
           <Link href={"/faq"}><a>What is this?</a></Link>
           <Link href={"/faq"}><a>What is that?</a></Link>
           <Link href={"/faq"}><a>How much is it?</a></Link>
           <Link href={"/faq"}><a>Who does this work for?</a></Link>
           <Link href={"/faq"}><a>Do you sponsor teams?</a></Link>
           <Link href={"/faq"}><a>When is it available?</a></Link>
+         </div>
         </div>
         <div className="menu-footer light-font">
           Copyright &copy; 2019- Surgo
