@@ -8,11 +8,25 @@
   position: relative;
   min-height: 30vh;
 
+  .signup-form {
+    &:first-of-type {
+    @include desktop {
+      flex: 5;
+      margin: 1rem 1rem 1rem 2rem;
+    }
+  }
+  div {
+      font-size: 0.75rem;
+      margin: 0;
+    }
+  }
+
   @include desktop {
     display: flex;
     flex-direction: row;
     min-height: 0;
     width: 100%;
+    padding: 1rem 4rem;
   }
 
   .btn-container {
@@ -21,7 +35,7 @@
     @include desktop {
       flex: 2;
       justify-content: center;
-      padding-top: 2rem;
+      padding-top: 3rem;
       padding-left: 2rem;
     }
   }
@@ -34,17 +48,11 @@
     text-align: left;
 
     @include desktop {
-      padding: 2rem 0 0 2rem;
-      flex: 1;
+      flex: 3;
     }
   }
   
   input {
-
-    @include desktop {
-      flex: 5;
-      margin: 1rem 1rem 1rem 2rem;
-    }
 
     &::-webkit-input-placeholder {
       color: $white;

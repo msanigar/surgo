@@ -1,9 +1,20 @@
 .about {
   margin-bottom: 10vh;
+
+  @include desktop {
+    max-width: $screenWidth;
+    margin: 0 auto;
+  }
+
   .container {
     padding: 3rem;
     display: flex;
     flex-direction: column;
+
+    @include desktop {
+      position: relative;
+    }
+
     h3 {
       font-size: 2rem;
       margin: 1rem 0;
@@ -34,20 +45,39 @@
       }
     }
     .team {
-      img {
-        width: 100%;
-        height: auto;
-        border: 10px solid $black;
-      }
-      h4 {
-        font-size: 1.5rem;
-        margin: 1rem 0 0 0;
-        font-weight: 300;
-      }
-      p {
-        font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 3rem;
+      display: flex;
+        flex-direction: column;
+
+        @include desktop {
+          flex-direction: row;
+        }
+
+      div {
+
+        @include desktop {
+          padding: 10px;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border: 10px solid $black;
+
+          @include desktop {
+            width: 90%;
+          }
+
+        }
+        h4 {
+          font-size: 1.5rem;
+          margin: 1rem 0 0 0;
+          font-weight: 300;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+          margin-bottom: 3rem;
+        }
       }
     }
     .careers {

@@ -34,15 +34,21 @@ class About extends Component {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec enim vitae est aliquet facilisis. Maecenas ullamcorper massa enim, quis fringilla erat aliquam nec. Aenean mi enim, convallis at justo quis, tristique dignissim mauris. </p>
             <h3>Meet <br />The Team</h3>
             <div className="team">
+             <div>
               <img alt="Alex Byfield - Managing Director" src={Alex} />
               <h4>Alex Byfield</h4>
               <p>Managing Director</p>
+             </div>
+            <div>
               <img alt="Christina McGrath - Head of Sports" src={Christina} />
               <h4>Christina McGrath</h4>
               <p>Head of Sports</p>
+            </div>
+            <div>
               <img alt="Gareth Sissons - Creative Director" src={Gareth} />
               <h4>Gareth Sissons</h4>
               <p>Creative Director</p>
+            </div>
             </div>
             <div className="careers">
               <Jobs />

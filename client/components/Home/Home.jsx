@@ -143,11 +143,9 @@ class Home extends Component {
         <div className="home home-6">
           <p className="top">Looks like you've hit rock bottom.</p>
           <h2 className="middle">Now it's time to take action.</h2>
-          <span onClick={() => this.scrollUp()}>
           <div className="btn-container">
-          <Button text={'start the climb'} />
+          <Button clickFunc={this.scrollUp} text={'start the climb'} />
           </div>
-          </span>
 
         </div>
       </div>

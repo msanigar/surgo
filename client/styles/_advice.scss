@@ -84,6 +84,11 @@
 
   .middle {
     padding: 4rem 1rem 2rem 1rem;
+
+    @include desktop {
+      max-width: $screenWidth;
+      margin: 0 auto;
+    }
   
     h2 {
       font-size: 1.75rem;
