@@ -40,14 +40,14 @@
 
   &.dark {
     color: $black;
-    border: 2px solid $grey;
+    border: 2px solid $black;
 
     a {
       color: $black;
     }
 
     &:hover {
-      border-color: darken($grey, 25%);
+      border-color: lighten($black, 25%);
     }
   }
 }

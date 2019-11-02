@@ -1,0 +1,54 @@
+.cookie-banner {
+  height: 168px;
+  background-image: linear-gradient(to top, #ff0000, #ffca42);
+  display: flex;
+  flex-direction: column;
+  transition: height 0.25s ease-in-out;
+  text-align: center;
+  padding: 0 1.5rem;
+
+  .cookie-link {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .show-cookie-prefs {
+    cursor: pointer;
+  }
+
+  .cookie-preferences {
+    padding-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+      margin: 0 0.5rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  &.hidden {
+    height: 26px;
+
+    span {
+      padding-top: 6px;
+    }
+  }
+
+  @include desktop {
+    height: 55px;
+    flex-direction: row;
+  }
+}

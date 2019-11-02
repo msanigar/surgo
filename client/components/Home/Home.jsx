@@ -10,6 +10,7 @@ import Nav from '../Nav';
 import Post from '../Post';
 import Button from '../Button'
 import Signup from '../Signup'
+import Cookies from '../Cookies'
 
 class Home extends Component {
   constructor(props) {
@@ -51,7 +52,7 @@ class Home extends Component {
 
     return (
       <div>
-
+        <Cookies />
         <div className="home home-1">
           <h2>There is <span>more</span> to Esports than just <span>winning</span> games.</h2>
         </div>
