@@ -6,6 +6,7 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import Strategy from '../SVG/Strategy/Strategy';
 import Habit from '../SVG/Habithacking/Habithacking';
 import Accountability from '../SVG/Accountability';
+import Back from '../SVG/Back';
 import Nav from '../Nav';
 import Post from '../Post';
 import Button from '../Button'
@@ -54,7 +55,13 @@ class Home extends Component {
       <div>
         <Cookies />
         <div className="home home-1">
-          <h2>There is <span>more</span> to Esports than just <span>winning</span> games.</h2>
+         <div>
+         <h1>Time to rise.</h1>
+         <h2>Surgo is a pioneer in Health & Wellbeing in Esports.</h2>
+         </div>
+         <div>
+         <h3>Scroll down and learn more </h3> <Back />
+         </div>
         </div>
         <Nav></Nav>
         <div className="home home-2">
