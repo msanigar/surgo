@@ -5,7 +5,7 @@
   flex-direction: column;
   transition: height 0.25s ease-in-out;
   text-align: center;
-  padding: 0 1.5rem;
+  justify-content: space-around;
 
   .cookie-link {
     text-decoration: underline;
@@ -14,15 +14,25 @@
 
   .show-cookie-prefs {
     cursor: pointer;
+    width: 100%;
   }
 
   .cookie-preferences {
     padding-top: 2rem;
+
+    @include desktop {
+      padding-top: 0;
+    }
   }
 
   h3 {
     font-size: 1.5rem;
     padding-top: 1.5rem;
+
+    @include desktop {
+      padding-top: 0;
+      font-size: 1rem;
+    }
   }
 
   div {
@@ -37,6 +47,10 @@
   p {
     font-size: 1rem;
     padding-bottom: 0.75rem;
+
+    @include desktop {
+      padding-bottom: 0;
+    }
   }
 
   &.hidden {
@@ -48,7 +62,8 @@
   }
 
   @include desktop {
-    height: 55px;
+    height: 65px;
     flex-direction: row;
+    align-items: center;
   }
 }
