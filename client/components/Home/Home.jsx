@@ -4,8 +4,6 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 import Strategy from '../SVG/Strategy/Strategy';
-import Habit from '../SVG/Habithacking/Habithacking';
-import Accountability from '../SVG/Accountability';
 import Back from '../SVG/Back';
 import Nav from '../Nav';
 import Post from '../Post';
@@ -55,17 +53,17 @@ class Home extends Component {
       <div>
         <Cookies />
         <div className="home home-1">
-         <div>
-         <h1>Time to rise.</h1>
-         <h2>Surgo is a pioneer in Health & Wellbeing in Esports.</h2>
-         </div>
-         <div>
-         <h3>Scroll down and learn more </h3> <Back />
-         </div>
+          <div>
+            <h1>Time to rise.</h1>
+            <h2>Surgo is a pioneer in Health & Wellbeing in Esports.</h2>
+          </div>
+          <div>
+            <h3>Scroll down and learn more </h3> <Back />
+          </div>
         </div>
         <Nav></Nav>
         <div className="home home-2">
-          <h3 className="home-title book-font">Surgo means</h3>
+          <h3 className="home-title">Surgo means</h3>
           <hr />
           <h2 className="home-surgo-means">To rise, to lift yourself, to climb up, to move upwards.</h2>
           <div className="btn-container">
@@ -80,39 +78,44 @@ class Home extends Component {
 
             <Strategy />
 
-            <h4 className="tile-title">Performance Strategy</h4>
-            <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
+            <div>
+              <h4 className="tile-title">Performance Strategy</h4>
+              <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
-          <div className="btn-container">
-          <Button text={'Learn more'} link={'performance-strategy'} theme={'dark'} />
-          </div>
-          
-          </div>
-          <div className="tile">
-
-            <Accountability />
-
-            <h4 className="tile-title">Accountability</h4>
-            <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
-          Fall in love with the right foods!</p>
-
-          <div className="btn-container">
-          <Button text={'Learn more'} link={'accountability'} theme={'dark'} />
-          </div>
+              <div className="btn-container">
+                <Button text={'Learn more'} link={'performance-strategy'} theme={'dark'} />
+              </div>
+            </div>
 
           </div>
           <div className="tile">
 
-            <Habit />
+            <Strategy />
 
-            <h4 className="tile-title">Habit Hacking</h4>
-            <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
+            <div>
+              <h4 className="tile-title">Accountability</h4>
+              <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
           Fall in love with the right foods!</p>
 
-          <div className="btn-container">
-          <Button text={'Learn more'} link={'habit-hacking'} theme={'dark'} />
+              <div className="btn-container">
+                <Button text={'Learn more'} link={'accountability'} theme={'dark'} />
+              </div>
+            </div>
           </div>
+          <div className="tile">
+
+            <Strategy />
+
+            <div>
+              <h4 className="tile-title">Habit Hacking</h4>
+              <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
+          Fall in love with the right foods!</p>
+
+              <div className="btn-container">
+                <Button text={'Learn more'} link={'habit-hacking'} theme={'dark'} />
+              </div>
+            </div>
 
           </div>
         </div>
@@ -152,7 +155,7 @@ class Home extends Component {
           <p className="top">Looks like you've hit rock bottom.</p>
           <h2 className="middle">Now it's time to take action.</h2>
           <div className="btn-container">
-          <Button clickFunc={this.scrollUp} text={'start the climb'} />
+            <Button clickFunc={this.scrollUp} text={'start the climb'} />
           </div>
 
         </div>
