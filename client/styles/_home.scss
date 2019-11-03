@@ -13,14 +13,16 @@
 }
 
 .home-1 {
-  background: $dark-blue;
+  background: url('./img/home-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   justify-content: center;
   text-align: left;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
-  font-family: 'CamptonMedium';
 
   @include desktop {
     padding-left: 12rem;
@@ -49,10 +51,11 @@
     color: $white;
     padding-bottom: 1.5rem;
     letter-spacing: -4.6px;
-    font-weight: 800;
+    font-family: 'Campton-Bold';
 
     @include desktop {
       font-size: 6rem;
+      padding-bottom: 2.5rem;
     }
   }
 
@@ -68,8 +71,8 @@
   }
 
   h3 {
-    font-weight: 800;
     display: inline-block;
+    font-family: 'Campton-Bold';
   }
 }
 
@@ -111,15 +114,15 @@
     font-size: 1.75rem;
     text-align: center;
 
-    &.home-title {
-      font-weight: 700;
-      padding-top: 5rem;
-      font-size: 1.5rem;
+        &.home-title {
+          font-weight: 700;
+          padding-top: 5rem;
+          font-size: 1.5rem;
 
-      @include desktop {
-        font-size: 2.5rem;
-      }
-    }
+          @include desktop {
+            font-size: 2.5rem;
+          }
+        }
   }
 
   .btn-container {
