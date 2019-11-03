@@ -19,6 +19,15 @@
   overflow: hidden;
 }
 
+.cover-video {
+  height: auto;
+  max-width: 100%;
+  position: absolute;
+  z-index: 2;
+  filter: sepia(100%) grayscale(80%) blur(2px) hue-rotate(190deg) saturate(500%);
+  -webkit-filter: sepia(100%) grayscale(80%) blur(2px) hue-rotate(190deg) saturate(500%)
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Campton-Medium", "Roboto", sans-serif;

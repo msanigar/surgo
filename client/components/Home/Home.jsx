@@ -3,13 +3,16 @@ import React, { Component } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
-import Strategy from '../SVG/Strategy/Strategy';
+import Strategy from '../SVG/Strategy';
+import Techno from '../SVG/Techno';
 import Back from '../SVG/Back';
 import Nav from '../Nav';
 import Post from '../Post';
 import Button from '../Button'
 import Signup from '../Signup'
 import Cookies from '../Cookies'
+
+import coverVideo from '../../styles/img/coverr-wonderful-mountains-1572188626101.mp4'
 
 class Home extends Component {
   constructor(props) {
@@ -52,6 +55,9 @@ class Home extends Component {
     return (
       <div>
         <Cookies />
+        <video autoPlay muted loop className="cover-video">
+          <source src={coverVideo} type="video/mp4" />
+        </video>
         <div className="home home-1">
           <div>
             <h1>Time to rise.</h1>
@@ -80,8 +86,7 @@ class Home extends Component {
 
             <div>
               <h4 className="tile-title">Performance Strategy</h4>
-              <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
-          Fall in love with the right foods!</p>
+              <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
                 <Button text={'Learn more'} link={'performance-strategy'} theme={'dark'} />
@@ -91,12 +96,11 @@ class Home extends Component {
           </div>
           <div className="tile">
 
-            <Strategy />
+            <Techno />
 
             <div>
-              <h4 className="tile-title">Accountability</h4>
-              <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
-          Fall in love with the right foods!</p>
+              <h4 className="tile-title">Tailored, Certified Nutrion</h4>
+              <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
                 <Button text={'Learn more'} link={'accountability'} theme={'dark'} />
@@ -105,7 +109,7 @@ class Home extends Component {
           </div>
           <div className="tile">
 
-            <Strategy />
+            <Techno />
 
             <div>
               <h4 className="tile-title">Habit Hacking</h4>
