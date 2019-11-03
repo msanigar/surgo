@@ -68,7 +68,7 @@
 }
 
 .home-2 {
-  background: $blue;
+  background-image: linear-gradient(to right, #0085ff, #131163);
   width: 90vw;
   margin: 0 auto;
   padding-bottom: 2rem;
@@ -95,7 +95,7 @@
     margin: 3rem;
 
     @include desktop {
-      font-size: 3.5rem;
+      font-size: 3rem;
       margin: 0;
     }
   }

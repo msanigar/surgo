@@ -67,10 +67,9 @@ class Home extends Component {
         <div className="home home-2">
           <h3 className="home-title book-font">Surgo means</h3>
           <hr />
-          <h2 className="book-font">To rise up, to climb, to move upwards</h2>
-          <p className="book-font">Our programmes provide teams with the knowledge, tools and support they need to develop their players into professional athletes.</p>
+          <h2 className="book-font">To rise, to lift yourself, to climb up, to move upwards.</h2>
           <div className="btn-container">
-            <Button link={'about'} text={'About Surgo'} />
+            <Button link={'about'} text={'About us'} />
           </div>
         </div>
 
