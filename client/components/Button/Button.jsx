@@ -6,7 +6,7 @@ const Button = ({ text, link, theme, clickFunc, funcArg }) => {
   const classes = theme === 'dark' ? 'btn dark' : 'btn light'
 
     return (
-      <button className={ classes } onClick={clickFunc ? () => clickFunc(funcArg) : ''}>
+      <button className={ classes } onClick={clickFunc ? () => clickFunc(funcArg) : null}>
         { link && <Link href={`/${link}`}><a>{ text }</a></Link> }
         { !link && <a>{ text }</a>}
       </button>
