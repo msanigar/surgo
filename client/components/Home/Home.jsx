@@ -67,14 +67,15 @@ class Home extends Component {
         <div className="home home-2">
           <h3 className="home-title book-font">Surgo means</h3>
           <hr />
-          <h2 className="book-font">To rise, to lift yourself, to climb up, to move upwards.</h2>
+          <h2 className="home-surgo-means">To rise, to lift yourself, to climb up, to move upwards.</h2>
           <div className="btn-container">
             <Button link={'about'} text={'About us'} />
           </div>
         </div>
 
         <div className="home home-3">
-          <h3 className="home-title">Go further than ever before.</h3>
+          <h3 className="home-title">Going further than we ever have before.</h3>
+          <p className="book-font contain-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
           <div className="tile">
 
             <Strategy />

@@ -4,6 +4,12 @@
   @include desktop {
     min-height: 90vh;
   }
+
+  .contain-center {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .home-1 {
@@ -72,11 +78,11 @@
   width: 90vw;
   margin: 0 auto;
   padding-bottom: 2rem;
-  padding-top: 15vh;
+  padding-top: 5vh;
 
   @include desktop {
     padding-top: 0;
-    min-height: 25vh;
+    min-height: 55vh;
     width: 100vw;
     max-width: $screenWidth;
   }
@@ -90,13 +96,13 @@
   h2 {
     color: $white;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 900;
     margin: 3rem;
 
     @include desktop {
-      font-size: 3rem;
-      margin: 0;
+      font-size: 4.25rem;
+      margin: 3rem;
     }
   }
 
@@ -261,7 +267,6 @@
   margin: 0 auto;
   color: $white;
   max-width: 90vw;
-  margin-top: 1rem;
 
   @include desktop {
     max-width: $screenWidth;
@@ -351,8 +356,6 @@
   }
 
   .home-beta {
-    background-color: $blue;
-    height: 30vh;
 
     @include desktop {
       display: flex;

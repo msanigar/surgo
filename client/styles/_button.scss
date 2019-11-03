@@ -8,8 +8,6 @@
   padding: 0.5rem 1rem;
   display: inline-block;
   text-decoration: none;
-  max-width: 220px;
-  min-width: 180px;
   letter-spacing: 1px;
   font-weight: 700;
   outline: none;
@@ -20,6 +18,11 @@
   border-radius: 50px;
   overflow: hidden;
   height: 40px;
+
+  @include mobile-up {
+    max-width: 220px;
+    min-width: 180px;
+  }
   
   a {
     text-decoration: none;
