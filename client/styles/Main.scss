@@ -33,25 +33,13 @@
 }
 
 .cover-video {
-  width: auto;
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
   position: absolute;
   z-index: 2;
   -webkit-filter: sepia(100%) grayscale(80%) blur(2px) hue-rotate(190deg) saturate(500%);
   filter: sepia(100%) grayscale(80%) blur(2px) hue-rotate(190deg) saturate(500%);
-
-  @include mobile-down {
-    left: -75%;
-  }
-
-  @include mobile-up {
-    left: -120%;
-  }
-
-  @include tablet {
-    left: -30%;
-  }
 }
 
 body {
