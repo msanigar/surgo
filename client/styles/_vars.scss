@@ -20,6 +20,12 @@ $green: #339a5e;
   }
 }
 
+@mixin mobile-down {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
 @mixin mobile-up {
   @media (min-width: 360px) and (max-width: 767px) {
     @content;

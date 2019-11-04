@@ -40,8 +40,8 @@
     }
 
     svg {
-      fill: $white;
-      stroke: $white;
+      fill: $grey;
+      stroke: $grey;
       stroke-width: 2px;
       transform: translate3d(30px, 4px, 0) rotate(-90deg) scale(1.25);
     }
@@ -49,7 +49,7 @@
 
   h1 {
     font-size: 3.5rem;
-    color: $white;
+    color: $grey;
     padding-bottom: 1.5rem;
     letter-spacing: -4.6px;
     font-family: 'Campton-Bold';
@@ -62,7 +62,7 @@
 
   h2, h3 {
     font-size: 1rem;
-    color: $white;
+    color: $grey;
     line-height: 1;
     letter-spacing: normal;
 

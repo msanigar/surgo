@@ -12,7 +12,7 @@ import Button from '../Button'
 import Signup from '../Signup'
 import Cookies from '../Cookies'
 
-import coverVideo from '../../styles/img/coverr-wonderful-mountains-1572188626101.mp4'
+import coverVideo from '../../styles/img/2825068_1080.mp4'
 
 class Home extends Component {
   constructor(props) {
