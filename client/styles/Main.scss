@@ -32,14 +32,24 @@
   }
 }
 
+.video-overlay {
+  position: absolute;
+  left: 0px;
+  width: 100vw;
+  z-index: 3;
+  top: 0px;
+  background-color: rgba(50,50,50,0.3);
+  height: 100vh;
+}
+
 .cover-video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   position: absolute;
   z-index: 2;
-  -webkit-filter: sepia(100%) grayscale(80%) blur(2px) hue-rotate(190deg) saturate(500%);
-  filter: sepia(100%) grayscale(80%) blur(2px) hue-rotate(190deg) saturate(500%);
+  -webkit-filter: sepia(50%) grayscale(0%) blur(1px) hue-rotate(190deg) saturate(100%);
+  filter: sepia(50%) grayscale(0%) blur(1px) hue-rotate(190deg) saturate(100%);
 }
 
 body {
