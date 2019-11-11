@@ -5,6 +5,8 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 import Strategy from '../SVG/Strategy';
 import Techno from '../SVG/Techno';
+import Stock from '../SVG/Stock';
+import Growth from '../SVG/Growth';
 import Back from '../SVG/Back';
 import Nav from '../Nav';
 import Post from '../Post';
@@ -106,21 +108,34 @@ class Home extends Component {
               <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-                <Button text={'Learn more'} link={'accountability'} theme={'dark'} />
+              <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
               </div>
             </div>
           </div>
           <div className="tile">
 
-            <Techno />
+            <Stock />
 
             <div>
-              <h4 className="tile-title">Habit Hacking</h4>
-              <p className="book-font">High performance brains requires high performance diets, we engineer and implement this into your day-to-day routine.
-          Fall in love with the right foods!</p>
+              <h4 className="tile-title">Wealth Management</h4>
+              <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-                <Button text={'Learn more'} link={'habit-hacking'} theme={'dark'} />
+              <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
+              </div>
+            </div>
+
+          </div>
+          <div className="tile">
+
+            <Growth />
+
+            <div>
+              <h4 className="tile-title">Award Winning Personal Training</h4>
+              <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
+
+              <div className="btn-container">
+              <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
               </div>
             </div>
 
@@ -129,7 +144,6 @@ class Home extends Component {
 
         <div className="home home-4">
           <div className="container alice">
-            <h4>Endorsed by</h4>
             <AliceCarousel mouseDragEnabled autoPlay autoPlayInterval={2500} dotsDisabled buttonsDisabled
               onSlideChanged={this.handleOnSlideChange}>
               <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
@@ -138,7 +152,12 @@ class Home extends Component {
               <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
               <div className="item"><h4 onDragStart={handleOnDragStart} className="company">Company&Co.</h4></div>
             </AliceCarousel>
+            <div className="alice-above">
+            <div>
+            <h4>Who's involved</h4>
             <h4>{`0${this.state.curr} | 0${this.state.total}`}</h4>
+            </div>
+            </div>
           </div>
         </div>
         <div className="home home-5">

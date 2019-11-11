@@ -226,17 +226,47 @@
 
 .alice {
   color: $light-blue;
+  position: relative;
+
+  .alice-above {
+    position: absolute;
+    height: calc(100% - 6rem);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+
+      h4 {
+        letter-spacing: -1.2px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   h4 {
     text-align: left;
   }
+
   .item {
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
-    background: $dark-blue;
+    background-color: $dark-blue;
+    background: url('./img/endorse.png') no-repeat center center;
+    background-size: cover;
+
     h4 {
-      margin-top: 2rem;
+      padding-top: 12rem;
+      padding-left: 5rem;
       font-size: 1.5rem;
       color: $white;
+
 
       @include desktop {
         font-size: 3rem;
@@ -254,10 +284,10 @@
   color: $white;
   text-align: center;
   margin-top: 1rem;
-  min-height: 60vh;
+  height: auto;
+  min-height: 0;
 
   @include desktop {
-    min-height: 50vh;
     width: 100vw;
     max-width: $screenWidth;
   }
