@@ -23,6 +23,10 @@
       overflow: hidden;
     }
   }
+
+  .signup {
+    background: none;
+  }
 }
 
 .menu-footer {
@@ -93,7 +97,6 @@
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
-  background-color: $blue;
   min-height: 100vh;
 
   .menu-header {
@@ -104,6 +107,7 @@
     line-height: 3rem;
     position: relative;
     min-height: 40vh;
+    background-image: linear-gradient(to right, #0085ff, #131163);
 
     @include tablet {
       padding: 5rem 1rem !important;
