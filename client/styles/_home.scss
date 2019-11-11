@@ -87,7 +87,7 @@
   @include desktop {
     padding-top: 0;
     min-height: 55vh;
-    width: 100vw;
+    width: 98vw;
     max-width: $screenWidth;
   }
 
@@ -150,7 +150,7 @@
   margin: 0 auto;
 
   @include desktop {
-    width: 100vw;
+    width: 98vw;
     max-width: $screenWidth;
   }
 
@@ -161,7 +161,7 @@
   .tile {
     min-height: 50vh;
     margin: 2rem 0 0 0;
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -184,7 +184,7 @@
       min-height: 30vh;
       text-align: left;
       flex-direction: row;
-      padding-left: 4rem;
+      padding: 4rem 0;
       align-items: center;
       justify-content: center;
 
@@ -231,7 +231,7 @@
   .alice-above {
     position: absolute;
     height: calc(100% - 6rem);
-    width: 100%;
+    width: calc(100% - 6rem);
     top: 0;
     left: 0;
     padding: 3rem;
@@ -288,7 +288,7 @@
   min-height: 0;
 
   @include desktop {
-    width: 100vw;
+    width: 98vw;
     max-width: $screenWidth;
   }
 
