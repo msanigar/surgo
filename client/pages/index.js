@@ -28,7 +28,7 @@ Index.getInitialProps = async function () {
 
   pageData.forEach(post => {
     // only return latest 3
-    arr.length < 3 && arr.push(post)
+    arr.length < 6 && arr.push(post)
     return (wpData = {
       ...wpData,
       posts: arr

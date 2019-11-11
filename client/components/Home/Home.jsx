@@ -165,7 +165,9 @@ class Home extends Component {
             <Signup />
           </div>
           <div className="home-latest">
-            <h3>News from the team</h3>
+            <h3>Content from us, to you.</h3>
+            <p className="home-latest-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur.</p>
+            <h4>Most recent</h4>
             <div className="home-blogs-container">
               {this.props.latest.posts.map((post, i) => {
                 let newDate = (new Date(post.date)).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' });
@@ -178,8 +180,8 @@ class Home extends Component {
         </div>
 
         <div className="home home-6">
-          <p className="top">Looks like you've hit rock bottom.</p>
-          <h2 className="middle">Now it's time to take action.</h2>
+          <p className="top">Rock bottom, you can’t go any lower.</p>
+          <h2 className="middle">Now you need to take action.</h2>
           <div className="btn-container">
             <Button clickFunc={this.scrollUp} text={'start the climb'} />
           </div>
