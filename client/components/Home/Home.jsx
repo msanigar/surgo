@@ -92,7 +92,7 @@ class Home extends Component {
               <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-                <Button text={'Learn more'} link={'performance-strategy'} theme={'dark'} />
+                <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
               </div>
             </div>
 

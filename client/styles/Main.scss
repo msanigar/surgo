@@ -32,6 +32,21 @@
   }
 }
 
+.text-link {
+  cursor: pointer;
+  font-family: 'Campton-Bold';
+  color: $black;
+  position: relative;
+
+  svg {
+    transform: rotate(180deg);
+    color: $black;
+    min-width: 0 !important;
+    position: absolute;
+    right: -64px;
+  }
+}
+
 .video-overlay {
   position: absolute;
   left: 0px;
