@@ -87,7 +87,8 @@
   @include desktop {
     padding-top: 0;
     min-height: 55vh;
-    width: 98vw;
+    width: 98.4vw;
+    margin: 0;
     max-width: $screenWidth;
   }
 
@@ -150,7 +151,7 @@
   margin: 0 auto;
 
   @include desktop {
-    width: 98vw;
+    width: 98.4vw;
     max-width: $screenWidth;
   }
 
@@ -288,7 +289,7 @@
   min-height: 0;
 
   @include desktop {
-    width: 98vw;
+    width: 98.4vw;
     max-width: $screenWidth;
   }
 
