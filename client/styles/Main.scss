@@ -37,13 +37,18 @@
   font-family: 'Campton-Bold';
   color: $black;
   position: relative;
+  max-width: 120px;
+  width: 100%;
+  text-decoration: none;
 
   svg {
     transform: rotate(180deg);
     color: $black;
     min-width: 0 !important;
     position: absolute;
-    right: -64px;
+    right: 0px;
+    top: -4px;
+    stroke: black;
   }
 }
 
@@ -84,11 +89,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Campton-Book", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.text-link {
-  text-decoration: none;
-  color: inherit;
 }
 
 code {

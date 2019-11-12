@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link";
+import Back from '../SVG/Back';
 
 const Post = ({i, date, post}) => {
   return (
@@ -7,7 +8,7 @@ const Post = ({i, date, post}) => {
       <span className="meta book-font"><em>{ date }</em></span>
       <h2 className="book-font"> {post.title.rendered} </h2>
       <span className="content book-font" dangerouslySetInnerHTML={{ __html: post.content.rendered }}></span>
-      <Link href={'/blog'}><a className="text-link">read more</a></Link>
+      <Link href={'/blog'}><a className="text-link">Read <Back /></a></Link>
     </div>
   )
 }

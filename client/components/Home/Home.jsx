@@ -14,6 +14,8 @@ import Button from '../Button'
 import Signup from '../Signup'
 import Cookies from '../Cookies'
 
+import Link from "next/link";
+
 import coverVideo from '../../styles/img/2825068_1080.mp4'
 
 class Home extends Component {
@@ -94,7 +96,7 @@ class Home extends Component {
               <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-                <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
+                <Link href={'/performance-strategy'}><a className="text-link">Explore <Back /></a></Link>
               </div>
             </div>
 
@@ -108,7 +110,7 @@ class Home extends Component {
               <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-              <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
+              <Link href={'/performance-strategy'}><a className="text-link">Explore <Back /></a></Link>
               </div>
             </div>
           </div>
@@ -121,7 +123,7 @@ class Home extends Component {
               <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-              <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
+              <Link href={'/performance-strategy'}><a className="text-link">Explore <Back /></a></Link>
               </div>
             </div>
 
@@ -135,7 +137,7 @@ class Home extends Component {
               <p className="book-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non nisl consectetur tincidunt elementum nisi nec, parturient. Dictum eget felis tincidunt ut. Volutpat sit diam dictumst consectetur purus. Dui sit mattis sit imperdiet sollicitudin eu. Ut tincidunt iaculis tristique morbi et neque. Tincidunt consequat congue nisl, sagittis in adipiscing ornare euismod eleifend. </p>
 
               <div className="btn-container">
-              <p className="text-link" link={'performance-strategy'}> Explore <Back /></p>
+              <Link href={'/performance-strategy'}><a className="text-link">Explore <Back /></a></Link>
               </div>
             </div>
 
