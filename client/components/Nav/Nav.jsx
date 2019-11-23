@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NavButton from '../NavButton';
-import Menu from '../Menu';
+import NavButton from "../NavButton";
+import Menu from "../Menu";
 
 class Nav extends Component {
   constructor(props) {
@@ -8,9 +8,9 @@ class Nav extends Component {
 
     this.state = {
       navOpen: false
-    }
+    };
 
-    this.toggleNav = this.toggleNav.bind(this)
+    this.toggleNav = this.toggleNav.bind(this);
   }
 
   // kinda hacky, if we navigate while menu open
@@ -19,41 +19,40 @@ class Nav extends Component {
 
   componentDidMount() {
     this.intervalId = setInterval(() => {
-      if(!this.state.navOpen && document.body.classList.contains('noscroll')) { 
-        document.body.classList.remove('noscroll')
+      if (!this.state.navOpen && document.body.classList.contains("noscroll")) {
+        document.body.classList.remove("noscroll");
       }
     }, 1000);
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     clearInterval(this.intervalId);
   }
- 
-  toggleNav = () => {
 
+  toggleNav = () => {
     // bit of a race condition here..
     // check the state before we change it
 
     if (!this.state.navOpen) {
-      document.body.classList.add('noscroll');
+      document.body.classList.add("noscroll");
     } else {
-      document.body.classList.remove('noscroll');
+      document.body.classList.remove("noscroll");
     }
 
     setTimeout(() => {
       this.setState({
         navOpen: !this.state.navOpen
-      })
-    }, 25)
-  }
+      });
+    }, 25);
+  };
 
   render() {
     return (
       <div className="app-container">
-          <NavButton toggle={this.toggleNav} />
-          <Menu hide={this.toggleNav} show={this.state.navOpen} />
-        </div>
-    )
+        <NavButton toggle={this.toggleNav} />
+        <Menu hide={this.toggleNav} show={this.state.navOpen} />
+      </div>
+    );
   }
 }
 

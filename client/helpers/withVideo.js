@@ -8,7 +8,7 @@ module.exports = (nextConfig = {}) => {
       }
 
       const { dev, isServer } = options;
-      const { assetPrefix = '', urlLoaderOptions } = nextConfig;
+      const { assetPrefix = "", urlLoaderOptions } = nextConfig;
 
       options.defaultLoaders.assetsImport = {
         loader: "url-loader",

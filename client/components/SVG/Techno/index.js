@@ -1,3 +1,3 @@
-import Techno from './Techno';
+import Techno from "./Techno";
 
 export default Techno;

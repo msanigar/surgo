@@ -15,14 +15,28 @@
       position: relative;
     }
 
+    div {
+      margin-bottom: 3rem;
+    }
+
+    .about-bg {
+      background: url("./img/about-bg.png");
+      background-size: cover;
+      min-height: 433px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
     h3 {
-      font-size: 2rem;
+      font-size: 3rem;
       margin: 1rem 0;
       line-height: 1.5;
-      display: flex;
+      text-align: center;
+      font-family: "Campton-Bold";
     }
     p {
-      font-size: 1.25rem;
+      font-size: 1rem;
+      font-family: "Campton-Book";
       line-height: 1.5;
       margin-bottom: 2rem;
     }
@@ -36,7 +50,7 @@
       border-radius: 50%;
       background-color: $white;
       transform: rotate(45deg);
-  
+
       svg {
         margin: 0 auto;
         display: block;
@@ -46,14 +60,16 @@
     }
     .team {
       display: flex;
-        flex-direction: column;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 3rem;
 
-        @include desktop {
-          flex-direction: row;
-        }
+      @include desktop {
+        flex-direction: row;
+      }
 
       div {
-
+        text-align: center;
         @include desktop {
           padding: 10px;
         }
@@ -61,22 +77,23 @@
         img {
           width: 100%;
           height: auto;
-          border: 10px solid $black;
+          max-height: 164px;
+          max-width: 164px;
 
           @include desktop {
             width: 90%;
           }
-
         }
         h4 {
           font-size: 1.5rem;
           margin: 1rem 0 0 0;
-          font-weight: 300;
+          font-family: "Campton-Bold";
         }
         p {
           font-size: 1rem;
           font-weight: 500;
           margin-bottom: 3rem;
+          font-family: "Campton-Book";
         }
       }
     }
@@ -86,14 +103,17 @@
         display: block;
         padding-top: 12.5px;
         stroke: black;
+        max-width: 700px;
       }
       h4 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 3rem;
         margin: 2rem 0 3rem 0;
+        font-family: "Campton-Bold";
       }
       p {
         text-align: center;
+        font-family: "Campton-Book";
         font-size: 1rem;
       }
     }

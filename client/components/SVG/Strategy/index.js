@@ -1,3 +1,3 @@
-import Strategy from './Strategy';
+import Strategy from "./Strategy";
 
 export default Strategy;

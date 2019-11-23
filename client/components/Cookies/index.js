@@ -1,3 +1,3 @@
-import Cookies from './Cookies.jsx'
+import Cookies from "./Cookies.jsx";
 
-export default Cookies
+export default Cookies;

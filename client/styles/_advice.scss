@@ -2,19 +2,19 @@
   background-color: $white;
 
   .yellow-text {
-    color: $yellow
+    color: $yellow;
   }
 
   .yellow-bg {
-    background-color: $yellow
+    background-color: $yellow;
   }
 
   .green-text {
-    color: $green
+    color: $green;
   }
 
   .green-bg {
-    background-color: $green
+    background-color: $green;
   }
 
   .red-text {
@@ -39,7 +39,7 @@
         margin: 0;
         color: $white;
       }
-  
+
       h2 {
         font-size: 1.8rem;
         line-height: 1.2;
@@ -47,7 +47,6 @@
     }
 
     .next {
-
       width: 80vw;
       margin: 0 auto;
 
@@ -78,7 +77,6 @@
           }
         }
       }
-
     }
   }
 
@@ -89,7 +87,7 @@
       max-width: $screenWidth;
       margin: 0 auto;
     }
-  
+
     h2 {
       font-size: 1.75rem;
       padding: 0 1rem;
@@ -143,8 +141,13 @@
   }
 
   .signup {
-
-    .title, h2, h3, a, button, input, .btn-container a{
+    .title,
+    h2,
+    h3,
+    a,
+    button,
+    input,
+    .btn-container a {
       color: $black;
       border-color: $black;
     }

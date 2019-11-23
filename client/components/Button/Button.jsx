@@ -1,16 +1,22 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 
 const Button = ({ text, link, theme, clickFunc, funcArg }) => {
+  const classes = theme === "dark" ? "btn dark" : "btn light";
 
-  const classes = theme === 'dark' ? 'btn dark' : 'btn light'
-
-    return (
-      <button className={ classes } onClick={clickFunc ? () => clickFunc(funcArg) : null}>
-        { link && <Link href={`/${link}`}><a>{ text }</a></Link> }
-        { !link && <a>{ text }</a>}
-      </button>
-    )
-}
+  return (
+    <button
+      className={classes}
+      onClick={clickFunc ? () => clickFunc(funcArg) : null}
+    >
+      {link && (
+        <Link href={`/${link}`}>
+          <a>{text}</a>
+        </Link>
+      )}
+      {!link && <a>{text}</a>}
+    </button>
+  );
+};
 
 export default Button;

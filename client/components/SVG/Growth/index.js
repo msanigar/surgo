@@ -1,3 +1,3 @@
-import Growth from './Growth';
+import Growth from "./Growth";
 
 export default Growth;

@@ -1,17 +1,51 @@
 @import url("//hello.myfonts.net/count/3a7bc8");
 
-  
-@font-face {font-family: 'Campton-Black';src: url('Fonts/3A7BC8_0_0.eot');src: url('Fonts/3A7BC8_0_0.eot?#iefix') format('embedded-opentype'),url('Fonts/3A7BC8_0_0.woff2') format('woff2'),url('Fonts/3A7BC8_0_0.woff') format('woff'),url('Fonts/3A7BC8_0_0.ttf') format('truetype'),url('Fonts/3A7BC8_0_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'Campton-Bold';src: url('Fonts/3A7BC8_1_0.eot');src: url('Fonts/3A7BC8_1_0.eot?#iefix') format('embedded-opentype'),url('Fonts/3A7BC8_1_0.woff2') format('woff2'),url('Fonts/3A7BC8_1_0.woff') format('woff'),url('Fonts/3A7BC8_1_0.ttf') format('truetype'),url('Fonts/3A7BC8_1_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'Campton-Book';src: url('Fonts/3A7BC8_2_0.eot');src: url('Fonts/3A7BC8_2_0.eot?#iefix') format('embedded-opentype'),url('Fonts/3A7BC8_2_0.woff2') format('woff2'),url('Fonts/3A7BC8_2_0.woff') format('woff'),url('Fonts/3A7BC8_2_0.ttf') format('truetype'),url('Fonts/3A7BC8_2_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'Campton-ExtraLight';src: url('Fonts/3A7BC8_3_0.eot');src: url('Fonts/3A7BC8_3_0.eot?#iefix') format('embedded-opentype'),url('Fonts/3A7BC8_3_0.woff2') format('woff2'),url('Fonts/3A7BC8_3_0.woff') format('woff'),url('Fonts/3A7BC8_3_0.ttf') format('truetype'),url('Fonts/3A7BC8_3_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'Campton-Medium';src: url('Fonts/3A7BC8_4_0.eot');src: url('Fonts/3A7BC8_4_0.eot?#iefix') format('embedded-opentype'),url('Fonts/3A7BC8_4_0.woff2') format('woff2'),url('Fonts/3A7BC8_4_0.woff') format('woff'),url('Fonts/3A7BC8_4_0.ttf') format('truetype'),url('Fonts/3A7BC8_4_0.svg#wf') format('svg');}
- 
+@font-face {
+  font-family: "Campton-Black";
+  src: url("Fonts/3A7BC8_0_0.eot");
+  src: url("Fonts/3A7BC8_0_0.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/3A7BC8_0_0.woff2") format("woff2"),
+    url("Fonts/3A7BC8_0_0.woff") format("woff"),
+    url("Fonts/3A7BC8_0_0.ttf") format("truetype"),
+    url("Fonts/3A7BC8_0_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "Campton-Bold";
+  src: url("Fonts/3A7BC8_1_0.eot");
+  src: url("Fonts/3A7BC8_1_0.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/3A7BC8_1_0.woff2") format("woff2"),
+    url("Fonts/3A7BC8_1_0.woff") format("woff"),
+    url("Fonts/3A7BC8_1_0.ttf") format("truetype"),
+    url("Fonts/3A7BC8_1_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "Campton-Book";
+  src: url("Fonts/3A7BC8_2_0.eot");
+  src: url("Fonts/3A7BC8_2_0.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/3A7BC8_2_0.woff2") format("woff2"),
+    url("Fonts/3A7BC8_2_0.woff") format("woff"),
+    url("Fonts/3A7BC8_2_0.ttf") format("truetype"),
+    url("Fonts/3A7BC8_2_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "Campton-ExtraLight";
+  src: url("Fonts/3A7BC8_3_0.eot");
+  src: url("Fonts/3A7BC8_3_0.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/3A7BC8_3_0.woff2") format("woff2"),
+    url("Fonts/3A7BC8_3_0.woff") format("woff"),
+    url("Fonts/3A7BC8_3_0.ttf") format("truetype"),
+    url("Fonts/3A7BC8_3_0.svg#wf") format("svg");
+}
+
+@font-face {
+  font-family: "Campton-Medium";
+  src: url("Fonts/3A7BC8_4_0.eot");
+  src: url("Fonts/3A7BC8_4_0.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/3A7BC8_4_0.woff2") format("woff2"),
+    url("Fonts/3A7BC8_4_0.woff") format("woff"),
+    url("Fonts/3A7BC8_4_0.ttf") format("truetype"),
+    url("Fonts/3A7BC8_4_0.svg#wf") format("svg");
+}

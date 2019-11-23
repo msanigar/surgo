@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 
-import Back from '../components/SVG/Back';
-import Jobs from '../components/SVG/Jobs';
-import Nav from '../components/Nav';
-import Signup from '../components/Signup'
+import Back from "../components/SVG/Back";
+import Mission from "../components/SVG/Mission";
+import Careers from "../components/SVG/Careers";
+import Nav from "../components/Nav";
+import Signup from "../components/Signup";
 
-import Alex from '../styles/img/alex.png';
-import Gareth from '../styles/img/gareth.png';
-import Christina from '../styles/img/christina.png';
+import Profile from "../styles/img/Profile.png";
 
-
-import '../styles/Main.scss';
+import "../styles/Main.scss";
 
 class About extends Component {
   constructor(props) {
@@ -28,44 +26,112 @@ class About extends Component {
             >
               <Back />
             </div>
-            <h3>About <br /> Surgo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec enim vitae est aliquet facilisis. Maecenas ullamcorper massa enim, quis fringilla erat aliquam nec. Aenean mi enim, convallis at justo quis, tristique dignissim mauris. </p>
-            <h3>Our <br />Mission</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec enim vitae est aliquet facilisis. Maecenas ullamcorper massa enim, quis fringilla erat aliquam nec. Aenean mi enim, convallis at justo quis, tristique dignissim mauris. </p>
-            <h3>Meet <br />The Team</h3>
-            <div className="team">
-             <div>
-              <img alt="Alex Byfield - Managing Director" src={Alex} />
-              <h4>Alex Byfield</h4>
-              <p>Managing Director</p>
-             </div>
+            <h3>About Surgo</h3>
+            <div className="about-bg"></div>
             <div>
-              <img alt="Christina McGrath - Head of Sports" src={Christina} />
-              <h4>Christina McGrath</h4>
-              <p>Head of Sports</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mi
+                volutpat, praesent sem venenatis. Ut neque ornare porta
+                sollicitudin donec. Mauris nisl integer auctor suspendisse diam
+                sed iaculis. At amet, sed nibh vitae a vitae urna malesuada
+                augue. A curabitur tellus suscipit turpis mus diam faucibus
+                tortor, sagittis. Scelerisque purus aliquam adipiscing imperdiet
+                vel pellentesque maecenas. Eget amet faucibus facilisis euismod
+                sit sed quis. Volutpat id aliquet tristique tincidunt.
+              </p>
+              <p>
+                Dolor nibh a tortor, pharetra interdum. Commodo elit ipsum
+                porttitor orci tellus arcu. Neque vel lectus nulla nibh volutpat
+                sed euismod lectus. Id amet amet ut vulputate proin lorem urna.
+                Lorem sed ut ornare nisl, sed quis mi. Eget magna tellus proin
+                sollicitudin. Non suspendisse vulputate odio senectus eleifend
+                odio maecenas imperdiet odio.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Amet mi volutpat, praesent sem
+                venenatis. Ut neque ornare porta sollicitudin donec. Mauris nisl
+                integer auctor suspendisse diam sed iaculis. At amet, sed nibh
+                vitae a vitae urna malesuada augue. A curabitur tellus suscipit
+                turpis mus diam faucibus tortor, sagittis. Scelerisque purus
+                aliquam adipiscing imperdiet vel pellentesque maecenas. Eget
+                amet faucibus facilisis euismod sit sed quis. Volutpat id
+                aliquet tristique tincidunt.
+              </p>
+              <p>
+                Dolor nibh a tortor, pharetra interdum. Commodo elit ipsum
+                porttitor orci tellus arcu. Neque vel lectus nulla nibh volutpat
+                sed euismod lectus. Id amet amet ut vulputate proin lorem urna.
+                Lorem sed ut ornare nisl, sed quis mi. Eget magna tellus proin
+                sollicitudin. Non suspendisse vulputate odio senectus eleifend
+                odio maecenas imperdiet odio.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Amet mi volutpat, praesent sem
+                venenatis. Ut neque ornare porta sollicitudin donec. Mauris nisl
+                integer auctor suspendisse diam sed iaculis. At amet, sed nibh
+                vitae a vitae urna malesuada augue. A curabitur tellus suscipit
+                turpis mus diam faucibus tortor, sagittis. Scelerisque purus
+                aliquam adipiscing imperdiet vel pellentesque maecenas. Eget
+                amet faucibus facilisis euismod sit sed quis. Volutpat id
+                aliquet tristique tincidunt
+              </p>
             </div>
             <div>
-              <img alt="Gareth Sissons - Creative Director" src={Gareth} />
-              <h4>Gareth Sissons</h4>
-              <p>Creative Director</p>
+              <h3>Our Mission</h3>
+              <Mission />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mi
+                volutpat, praesent sem venenatis. Ut neque ornare porta
+                sollicitudin donec. Mauris nisl integer auctor suspendisse diam
+                sed iaculis. At amet, sed nibh vitae a vitae urna malesuada
+                augue. A curabitur tellus suscipit turpis mus diam faucibus
+                tortor, sagittis. Scelerisque purus aliquam adipiscing imperdiet
+                vel pellentesque maecenas. Eget amet faucibus facilisis euismod
+                sit sed quis. Volutpat id aliquet tristique tincidunt.
+              </p>
+              <p>
+                Dolor nibh a tortor, pharetra interdum. Commodo elit ipsum
+                porttitor orci tellus arcu. Neque vel lectus nulla nibh volutpat
+                sed euismod lectus. Id amet amet ut vulputate proin lorem urna.
+                Lorem sed ut ornare nisl, sed quis mi. Eget magna tellus proin
+                sollicitudin. Non suspendisse vulputate odio senectus eleifend
+                odio maecenas imperdiet odio..
+              </p>
             </div>
-            </div>
-            <div className="careers">
-              <Jobs />
-              <h4>Career Openings</h4>
-              <p>We're not employing now but we will be soon.</p>
-              <p>Make sure that you sign up to our Newsletter to find out what's going on and when.
-         </p>
+            <div>
+              <h3>Meet the team bringing Surgo to life</h3>
+              <div className="team">
+                <div>
+                  <img alt="Alex Byfield - Managing Director" src={Profile} />
+                  <h4>Alex Byfield</h4>
+                  <p>Managing Director</p>
+                </div>
+                <div>
+                  <img alt="Christina McGrath - Head of Sports" src={Profile} />
+                  <h4>Christina McGrath</h4>
+                  <p>Head of Sports</p>
+                </div>
+                <div>
+                  <img alt="Gareth Sissons - Creative Director" src={Profile} />
+                  <h4>Gareth Sissons</h4>
+                  <p>Creative Director</p>
+                </div>
+              </div>
+              <div className="careers">
+                <h4>Career Openings</h4>
+                <p>
+                  There are no positions available currently at Surgo - however
+                  we may be hiring soon so keep tabs on us, sign up to the
+                  newsletter or follow our social media accounts as we will post
+                  about position openings there!
+                </p>
+                <Careers />
+              </div>
             </div>
           </div>
-          <div className="signup">
-            <Signup />
+          <div className="signup-container">
+            <Signup light={true} />
           </div>
         </div>
         <Nav />
       </React.Fragment>
-
-    )
+    );
   }
 }
 

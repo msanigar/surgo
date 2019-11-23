@@ -8,15 +8,22 @@
   min-height: 20vh;
   justify-content: center;
   padding: 0 0 0 1rem;
+  color: inherit;
+
+  &.light {
+    background-image: none;
+    background: $grey-blue;
+    $color: black;
+  }
 
   .signup-form {
     &:first-of-type {
-    @include desktop {
-      flex: 5;
-      margin: 1rem 1rem 1rem 2rem;
+      @include desktop {
+        flex: 5;
+        margin: 1rem 1rem 1rem 2rem;
+      }
     }
-  }
-  div {
+    div {
       font-size: 0.75rem;
       margin: 0;
     }
@@ -26,7 +33,7 @@
     display: flex;
     flex-direction: row;
     min-height: 15vh;
-    width: 100%;
+    width: calc(100% - 8rem);
     padding: 1rem 4rem;
     align-items: center;
     text-align: center;
@@ -34,6 +41,7 @@
 
   .btn-container {
     padding-left: 0rem;
+    color: inherit;
 
     @include desktop {
       flex: 2;
@@ -42,11 +50,11 @@
       padding-left: 2rem;
     }
   }
-  
+
   .title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: $white;
+    color: inherit;
     text-align: left;
 
     @include desktop {
@@ -54,29 +62,28 @@
       flex: 3;
     }
   }
-  
-  input {
 
+  input {
     &::-webkit-input-placeholder {
-      color: $white;
+      color: inherit;
     }
 
     &::-moz-placeholder {
-      color: $white;
+      color: inherit;
     }
 
     &::-ms-placeholder {
-      color: $white;
+      color: inherit;
     }
 
     &::placeholder {
-      color: $white;
+      color: inherit;
     }
 
     background-color: transparent;
     border: none;
-    color: $white;
-    border-bottom: 1px solid $white;
+    color: inherit;
+    border-bottom: 1px solid inherit;
     border-radius: 0;
     outline: none;
     height: 2rem;

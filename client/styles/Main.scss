@@ -34,7 +34,7 @@
 
 .text-link {
   cursor: pointer;
-  font-family: 'Campton-Bold';
+  font-family: "Campton-Bold";
   color: $black;
   position: relative;
   max-width: 120px;
@@ -58,7 +58,7 @@
   width: 100vw;
   z-index: 3;
   top: 0px;
-  background-color: rgba(50,50,50,0.3);
+  background-color: rgba(50, 50, 50, 0.3);
   height: 100vh;
 }
 
@@ -68,31 +68,36 @@
   object-fit: cover;
   position: absolute;
   z-index: 2;
-  -webkit-filter: sepia(50%) grayscale(0%) blur(1px) hue-rotate(190deg) saturate(100%);
+  -webkit-filter: sepia(50%) grayscale(0%) blur(1px) hue-rotate(190deg)
+    saturate(100%);
   filter: sepia(50%) grayscale(0%) blur(1px) hue-rotate(190deg) saturate(100%);
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Campton-Medium", "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Campton-Medium", "Roboto",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .light-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Campton-Light", "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Campton-Light", "Roboto",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .book-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Campton-Book", "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Campton-Book", "Roboto",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .noscroll {
