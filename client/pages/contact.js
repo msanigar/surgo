@@ -66,14 +66,15 @@ class Contact extends Component {
   }
 
   render() {
+    const classes = this.state.notification
+      ? "contact-notification show"
+      : "contact-notification";
     return (
       <React.Fragment>
         <div className="contact">
-          {this.state.notification && (
-            <div className="contact-notification">
-              <p>{this.state.notification}</p>
-            </div>
-          )}
+          <div className={classes}>
+            <p>{this.state.notification}</p>
+          </div>
           <div className="container">
             <div
               className="back light-font"
