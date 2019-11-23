@@ -58,7 +58,7 @@ class Contact extends Component {
           this.setState({
             notification: null
           });
-        }, 500000);
+        }, 3000);
       }
     };
 
