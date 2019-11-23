@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Back from "../components/SVG/Back";
 import Nav from "../components/Nav";
-import Button from "..//components/Button";
+import Button from "../components/Button";
 
 import "../styles/Main.scss";
 
@@ -12,11 +12,14 @@ class Contact extends Component {
 
     this.selectablePeople = this.selectablePeople.bind(this);
     this.messageUpdated = this.messageUpdated.bind(this);
+    this.sendMessage = this.sendMessage.bind(this);
+    this.notice = this.notice.bind(this);
 
     this.state = {
       selectables: ["Operations", "Sales", "Design"],
-      selected: null,
-      message: ""
+      selected: "Operations",
+      message: "",
+      notification: null
     };
   }
 
@@ -32,10 +35,45 @@ class Contact extends Component {
     });
   }
 
+  sendMessage() {
+    this.state.message && this.notice("Your message has been sent!");
+    !this.state.message &&
+      this.notice("Please complete the form before sending!");
+  }
+
+  notice(msg) {
+    // we need to queue these up, this is the best I could come up with quickly
+    this.wait = msg => {
+      if (this.state.notification) {
+        setTimeout(() => {
+          this.wait(msg);
+        }, 500);
+      } else {
+        this.setState({
+          notification: msg,
+          message: ""
+        });
+
+        setTimeout(() => {
+          this.setState({
+            notification: null
+          });
+        }, 5000);
+      }
+    };
+
+    this.wait(msg);
+  }
+
   render() {
     return (
       <React.Fragment>
         <div className="contact">
+          {this.state.notification && (
+            <div className="contact-notification">
+              <p>{this.state.notification}</p>
+            </div>
+          )}
           <div
             className="back light-font"
             onClick={() => window.history.back()}
@@ -71,7 +109,11 @@ class Contact extends Component {
                 rows="5"
               ></textarea>
               <div className="btn-container">
-                <Button text="Send Message" theme="dark" />
+                <Button
+                  clickFunc={this.sendMessage}
+                  text="Send Message"
+                  theme="dark"
+                />
               </div>
             </div>
           </div>

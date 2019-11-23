@@ -7,8 +7,21 @@
     margin: 0 auto;
   }
 
+  .contact-notification {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #00ffa3, #dfff1f);
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   .back {
     position: absolute;
+    cursor: pointer;
     top: 2rem;
     right: 2rem;
     width: 50px;
@@ -71,7 +84,7 @@
     .people-list {
       padding-bottom: 2rem;
       li {
-        color: lighten($black, 50%);
+        color: lighten($black, 75%);
         font-size: 1.25rem;
         line-height: 2;
         cursor: pointer;
