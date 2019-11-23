@@ -74,7 +74,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        <Nav />
+        <Nav theme={"dark"} />
       </React.Fragment>
     );
   }
