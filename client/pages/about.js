@@ -126,6 +126,7 @@ class About extends Component {
             </div>
           </div>
           <div className="signup-container">
+            <h4>Keep up to date with what’s going on at Surgo</h4>
             <Signup light={true} />
           </div>
         </div>
