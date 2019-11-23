@@ -8,7 +8,9 @@
   }
 
   .contact-notification {
+    position: fixed;
     height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     background-image: linear-gradient(to right, #00ffa3, #dfff1f);
@@ -42,7 +44,11 @@
   .container {
     padding: 6rem 3rem 3rem 3rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
 
     div {
       display: flex;
