@@ -352,11 +352,13 @@
   }
 
   .home-latest-blurb {
-    width: 70%;
+    width: 90%;
+    text-align: center;
     margin: 0 auto;
     min-height: 15vh;
 
     @include desktop {
+      text-align: left;
       width: 50%;
     }
   }
