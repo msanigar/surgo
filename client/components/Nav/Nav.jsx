@@ -22,7 +22,7 @@ class Nav extends Component {
       if (!this.state.navOpen && document.body.classList.contains("noscroll")) {
         document.body.classList.remove("noscroll");
       }
-    }, 1000);
+    }, 25);
   }
 
   componentWillUnmount() {
