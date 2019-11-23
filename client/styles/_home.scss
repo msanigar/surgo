@@ -473,6 +473,11 @@
   display: flex;
   flex-direction: column;
 
+  @include desktop {
+    min-height: 100vh;
+    justify-content: space-around;
+  }
+
   .btn-container {
     padding: 3rem;
   }
@@ -483,6 +488,10 @@
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: -0.8px;
+
+    @include desktop {
+      margin-top: 25%;
+    }
   }
   .middle {
     font-size: 3.5rem;
@@ -498,6 +507,10 @@
     @include mobile-up {
       margin-top: 2rem;
       margin-bottom: 3rem;
+    }
+
+    @include desktop {
+      margin-bottom: 15%;
     }
   }
 }
