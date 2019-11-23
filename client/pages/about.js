@@ -7,6 +7,14 @@ import Nav from "../components/Nav";
 import Signup from "../components/Signup";
 
 import Profile from "../styles/img/profile.png";
+import Profile2 from "../styles/img/profile2.png";
+import Profile3 from "../styles/img/profile3.png";
+import Profile4 from "../styles/img/profile4.png";
+import Profile5 from "../styles/img/profile5.png";
+import Profile6 from "../styles/img/profile6.png";
+import Profile7 from "../styles/img/profile7.png";
+import Profile8 from "../styles/img/profile8.png";
+import Profile9 from "../styles/img/profile9.png";
 
 import "../styles/Main.scss";
 
@@ -103,16 +111,65 @@ class About extends Component {
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <img alt="Christina McGrath - Head of Sports" src={Profile} />
+                  <img
+                    alt="Christina McGrath - Head of Sports"
+                    src={Profile2}
+                  />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <img alt="Gareth Sissons - Creative Director" src={Profile} />
+                  <img
+                    alt="Gareth Sissons - Creative Director"
+                    src={Profile3}
+                  />
+                  <h4>Gareth Sissons</h4>
+                  <p>Creative Director</p>
+                </div>
+                <div>
+                  <img alt="Alex Byfield - Managing Director" src={Profile4} />
+                  <h4>Alex Byfield</h4>
+                  <p>Managing Director</p>
+                </div>
+                <div>
+                  <img
+                    alt="Christina McGrath - Head of Sports"
+                    src={Profile5}
+                  />
+                  <h4>Christina McGrath</h4>
+                  <p>Head of Sports</p>
+                </div>
+                <div>
+                  <img
+                    alt="Gareth Sissons - Creative Director"
+                    src={Profile6}
+                  />
+                  <h4>Gareth Sissons</h4>
+                  <p>Creative Director</p>
+                </div>
+                <div>
+                  <img alt="Alex Byfield - Managing Director" src={Profile7} />
+                  <h4>Alex Byfield</h4>
+                  <p>Managing Director</p>
+                </div>
+                <div>
+                  <img
+                    alt="Christina McGrath - Head of Sports"
+                    src={Profile8}
+                  />
+                  <h4>Christina McGrath</h4>
+                  <p>Head of Sports</p>
+                </div>
+                <div>
+                  <img
+                    alt="Gareth Sissons - Creative Director"
+                    src={Profile9}
+                  />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
                 </div>
               </div>
+
               <div className="careers">
                 <h4>Career Openings</h4>
                 <p>
