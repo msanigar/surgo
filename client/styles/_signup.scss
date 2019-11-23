@@ -9,12 +9,7 @@
   justify-content: center;
   padding: 0 0 0 1rem;
   color: inherit;
-
-  &.light {
-    background-image: none;
-    background: $grey-blue;
-    $color: black;
-  }
+  justify-content: space-around;
 
   .signup-form {
     &:first-of-type {
@@ -65,29 +60,29 @@
 
   input {
     &::-webkit-input-placeholder {
-      color: inherit;
+      color: $white;
     }
 
     &::-moz-placeholder {
-      color: inherit;
+      color: $white;
     }
 
     &::-ms-placeholder {
-      color: inherit;
+      color: $white;
     }
 
     &::placeholder {
-      color: inherit;
+      color: $white;
     }
 
     background-color: transparent;
     border: none;
-    color: inherit;
-    border-bottom: 1px solid inherit;
+    color: $white;
+    border-bottom: 1px solid $white;
     border-radius: 0;
     outline: none;
     height: 2rem;
-    width: 90%;
+    width: 100%;
     font-size: 14px;
     margin: 0rem 1rem 1rem 0rem;
     -webkit-box-shadow: none;
@@ -104,6 +99,32 @@
       width: 75%;
       height: 3rem;
       font-size: 16px;
+    }
+  }
+
+  &.light {
+    background-image: none;
+    background: $grey-blue;
+    color: $black;
+
+    input {
+      color: $black;
+      border-bottom: 1px solid $black;
+      &::-webkit-input-placeholder {
+        color: $black;
+      }
+
+      &::-moz-placeholder {
+        color: $black;
+      }
+
+      &::-ms-placeholder {
+        color: $black;
+      }
+
+      &::placeholder {
+        color: $black;
+      }
     }
   }
 }
