@@ -6,7 +6,7 @@ import Careers from "../components/SVG/Careers";
 import Nav from "../components/Nav";
 import Signup from "../components/Signup";
 
-import Profile from "../styles/img/Profile.png";
+import Profile from "../styles/img/profile.png";
 
 import "../styles/Main.scss";
 
