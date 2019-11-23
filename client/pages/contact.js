@@ -14,7 +14,7 @@ class Contact extends Component {
     this.messageUpdated = this.messageUpdated.bind(this);
 
     this.state = {
-      selectables: ["Alex", "Christina", "Gareth"],
+      selectables: ["Operations", "Sales", "Design"],
       selected: null,
       message: ""
     };
@@ -36,41 +36,43 @@ class Contact extends Component {
     return (
       <React.Fragment>
         <div className="contact">
+          <div
+            className="back light-font"
+            onClick={() => window.history.back()}
+          >
+            <Back />
+          </div>
           <div className="container">
-            <div
-              className="back light-font"
-              onClick={() => window.history.back()}
-            >
-              <Back />
+            <div>
+              <h3>Contact</h3>
+              <p className="people-contact">Who are you trying to reach?</p>
+              <ul className="people-list">
+                {this.state.selectables.map((val, i) => {
+                  return (
+                    <li
+                      key={i}
+                      className={val === this.state.selected ? "selected" : ""}
+                      onClick={() => this.selectablePeople(val)}
+                    >
+                      {val}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-            <h3>
-              Contact <br /> Surgo
-            </h3>
-            <p className="people-contact">Who are you contacting? </p>
-            <ul className="people-list">
-              {this.state.selectables.map((val, i) => {
-                return (
-                  <li
-                    key={i}
-                    className={val === this.state.selected ? "selected" : ""}
-                    onClick={() => this.selectablePeople(val)}
-                  >
-                    {val}
-                  </li>
-                );
-              })}
-            </ul>
-            <p className="people-contact">What's your message? </p>
-            <textarea
-              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam quis mauris feugiat fringilla a at diam."
-              onChange={this.messageUpdated}
-              value={this.state.message}
-              maxLength="1000"
-              cols="30"
-              rows="5"
-            ></textarea>
-            <div className="btn-container">
-              <Button text="Send Message" theme="dark" />
+            <div>
+              <p className="people-contact">What's your message? </p>
+              <textarea
+                placeholder=""
+                onChange={this.messageUpdated}
+                value={this.state.message}
+                maxLength="1000"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <div className="btn-container">
+                <Button text="Send Message" theme="dark" />
+              </div>
             </div>
           </div>
         </div>
