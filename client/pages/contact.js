@@ -58,7 +58,7 @@ class Contact extends Component {
           this.setState({
             notification: null
           });
-        }, 5000);
+        }, 500000);
       }
     };
 
@@ -74,13 +74,14 @@ class Contact extends Component {
               <p>{this.state.notification}</p>
             </div>
           )}
-          <div
-            className="back light-font"
-            onClick={() => window.history.back()}
-          >
-            <Back />
-          </div>
           <div className="container">
+            <div
+              className="back light-font"
+              onClick={() => window.history.back()}
+            >
+              <Back />
+            </div>
+
             <div>
               <h3>Contact</h3>
               <p className="people-contact">Who are you trying to reach?</p>
