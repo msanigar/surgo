@@ -465,9 +465,11 @@
 .home-6 {
   background-color: $dark-blue;
   padding: 2rem;
-  font-weight: 700;
+  font-family: "Campton-Bold";
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   .btn-container {
     padding: 3rem;
@@ -476,14 +478,24 @@
   .top {
     margin-top: 12rem;
     color: $white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -0.8px;
   }
   .middle {
-    font-size: 2.65rem;
+    font-size: 3.5rem;
     color: $white;
     margin-top: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.8px;
   }
   .bottom {
-    margin-top: 12rem;
-    color: $white;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile-up {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
   }
 }
