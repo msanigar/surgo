@@ -28,12 +28,6 @@ class About extends Component {
       <React.Fragment>
         <div className="about">
           <div className="container">
-            <div
-              className="back light-font"
-              onClick={() => window.history.back()}
-            >
-              <Back />
-            </div>
             <h3>About Surgo</h3>
             <div className="about-bg"></div>
             <div>

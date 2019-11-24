@@ -1,5 +1,10 @@
 .faq {
   margin-bottom: 10vh;
+
+  @include desktop {
+    margin-bottom: 20vh;
+  }
+
   .container {
     padding: 3rem;
     display: flex;

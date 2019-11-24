@@ -48,7 +48,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <div className="app-container">
+      <div className={"app-container"}>
         <NavButton theme={this.props.theme} toggle={this.toggleNav} />
         <Menu hide={this.toggleNav} show={this.state.navOpen} />
       </div>

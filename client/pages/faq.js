@@ -18,12 +18,6 @@ class faq extends Component {
       <React.Fragment>
         <div className="faq">
           <div className="container">
-            <div
-              className="back light-font"
-              onClick={() => window.history.back()}
-            >
-              <Back />
-            </div>
             <h2>Frequently Asked Questions</h2>
             <h3 id="0">How much does Surgo cost?</h3>
             <p>

@@ -1,33 +1,27 @@
 .blog-container {
   display: flex;
   flex-direction: column;
+  position: relative;
+  max-width: $screenWidth;
+  margin: 0 auto;
+  margin-bottom: 20vh;
 
-  .top-section {
-    height: 65vh;
-    background-color: $black;
-    padding-top: 20vh;
+  .posts {
+    margin-top: 2rem;
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(1, 1fr);
 
-    h1 {
-      font-size: 2.25rem;
-      line-height: 1.2;
-      color: $light-blue;
-
-      span {
-        color: $yellow;
-        font-size: 1.25rem;
-      }
+    @include desktop {
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
     }
-  }
 
-  .next {
-    background-color: $yellow;
-    min-height: 20vh;
-    padding: 1.5rem 3rem 0rem 3rem;
-    font-size: 2rem;
-    text-align: center;
-
-    svg {
-      margin: 1rem 0;
+    .blog-post {
+      margin: 0;
     }
   }
 
@@ -51,44 +45,6 @@
     }
   }
 
-  .blog-post {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid $grey;
-    display: flex;
-    flex-direction: column;
-
-    &:last-of-type {
-      border-bottom: none;
-    }
-
-    .content {
-      padding: 1rem 0;
-      display: block;
-      p {
-        margin: 0.5rem 0;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        border: 10px solid $black;
-      }
-    }
-
-    .meta {
-      font-size: 0.9rem;
-      font-style: italic;
-      margin-top: 1rem;
-      display: block;
-      text-align: right;
-
-      em {
-        color: $yellow;
-      }
-    }
-  }
-
   h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -99,4 +55,9 @@
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
   }
+}
+
+.blog-filters {
+  height: 25vh;
+  background: $black;
 }
