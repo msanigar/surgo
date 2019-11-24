@@ -27,6 +27,7 @@
     "react-alice-carousel": "^1.15.3",
     "react-dom": "^16.8.6",
     "react-mailchimp-subscribe": "^2.1.0",
+    "react-select": "^3.0.8",
     "sass-loader": "^7.0.3"
   },
   "browserslist": [

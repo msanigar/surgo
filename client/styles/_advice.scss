@@ -161,7 +161,7 @@
     :-ms-input-placeholder {
       color: $black;
     }
-    :-moz-placeholder {
+    ::placeholder {
       color: $black;
     }
 
