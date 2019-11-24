@@ -20,6 +20,9 @@ const Menu = ({ show, hide }) => {
           <div className="menu-wrapper">
             <div className="menu-content-box">
               <h4>Surgo</h4>
+              <Link href={"/"}>
+                <a>Home</a>
+              </Link>
               <Link href={"/about"}>
                 <a>About us</a>
               </Link>

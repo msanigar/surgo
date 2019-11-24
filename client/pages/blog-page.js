@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import Back from "../components/SVG/Back";
+import Nav from "../components/Nav";
 
 import "../styles/Main.scss";
 
@@ -18,28 +19,54 @@ export default class Post extends Component {
       year: "numeric"
     });
     return (
-      <div className="blog-post">
-        <span className="meta book-font">
-          <em>{date}</em>
-        </span>
-        <h2 className="book-font"> {post.title.rendered} </h2>
-        <span
-          className="content book-font"
-          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-        ></span>
-        <Link href={{ pathname: "/blog", query: "" }}>
-          <a className="text-link">
-            Back <Back />
-          </a>
-        </Link>
-      </div>
+      <React.Fragment>
+        <div className="blog-page-container">
+          <div className="blog-page-top">
+            <div className="blog-page-title">
+              <h2> {post.title.rendered} </h2>
+            </div>
+            <div className="blog-page-meta">
+              <div>
+                <p>
+                  Post Category: <br />
+                  <em>{post._embedded["wp:term"][0][0].name}</em>
+                </p>
+              </div>
+              <div>
+                <p>
+                  Posted by: <br />
+                  <em>{post._embedded.author[0].name}</em>
+                </p>
+              </div>
+              <div>
+                <p>
+                  Date: <br />
+                  <em>{date}</em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="blog-page-wrapper">
+            <span
+              className="content book-font"
+              dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+            ></span>
+            <Link href={{ pathname: "/blog", query: "" }}>
+              <a className="text-link">
+                Back <Back />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <Nav theme={"dark"} />
+      </React.Fragment>
     );
   }
 }
 
 Post.getInitialProps = async function({ query }) {
   const pageRes = await fetch(
-    `https://api.surgo.gg/wp-json/wp/v2/posts?slug=${query.slug}`
+    `https://api.surgo.gg/wp-json/wp/v2/posts?slug=${query.slug}&_embed=1`
   );
   const pageData = await pageRes.json();
   let wpData = {};
