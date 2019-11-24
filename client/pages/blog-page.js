@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import Back from "../components/SVG/Back";
+
+import "../styles/Main.scss";
 
 export default class Post extends Component {
   constructor(props) {
@@ -24,7 +27,7 @@ export default class Post extends Component {
           className="content book-font"
           dangerouslySetInnerHTML={{ __html: post.content.rendered }}
         ></span>
-        <Link href={"/blog"}>
+        <Link href={{ pathname: "/blog", query: "" }}>
           <a className="text-link">
             Back <Back />
           </a>
@@ -33,10 +36,6 @@ export default class Post extends Component {
     );
   }
 }
-
-Post.getInitialProps = ({ query }) => {
-  return { query };
-};
 
 Post.getInitialProps = async function({ query }) {
   const pageRes = await fetch(
@@ -52,5 +51,5 @@ Post.getInitialProps = async function({ query }) {
     });
   });
 
-  return { wpData };
+  return { query, wpData };
 };
