@@ -64,25 +64,25 @@ const Menu = ({ show, hide }) => {
 
             <div className="menu-content-box">
               <h4>FAQ</h4>
-              <Link href={"/faq"}>
+              <Link href={"/faq#0"}>
                 <a>How much does Surgo cost?</a>
               </Link>
-              <Link href={"/faq"}>
+              <Link href={"/faq#1"}>
                 <a>What is that?</a>
               </Link>
-              <Link href={"/faq"}>
+              <Link href={"/faq#2"}>
                 <a>How long does Surgo take to do?</a>
               </Link>
-              <Link href={"/faq"}>
+              <Link href={"/faq#3"}>
                 <a>Who do we work with?</a>
               </Link>
-              <Link href={"/faq"}>
+              <Link href={"/faq#4"}>
                 <a>Who does the Surgo programmes</a>
               </Link>
-              <Link href={"/faq"}>
+              <Link href={"/faq#5"}>
                 <a>Do you sponsor teams or events?</a>
               </Link>
-              <Link href={"/faq"}>
+              <Link href={"/faq#6"}>
                 <a>When is it available to buy?</a>
               </Link>
             </div>

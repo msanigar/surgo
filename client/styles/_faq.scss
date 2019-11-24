@@ -4,16 +4,37 @@
     padding: 3rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    max-width: $screenWidth;
+    margin: 0 auto;
+    position: relative;
+    h2 {
+      font-family: "Campton-Bold";
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: -0.96px;
+      margin: 9rem 0;
+
+      &.bottom {
+        margin: 3rem 0;
+      }
+    }
     h3 {
-      font-size: 2rem;
-      margin: 1rem 0;
-      line-height: 1.5;
-      display: flex;
+      font-size: 3rem;
+      margin: 6rem 0;
+      font-family: "Campton-Bold";
+      font-weight: bold;
+      letter-spacing: -0.96px;
+
+      &.bottom {
+        margin: 3rem 0;
+      }
     }
     p {
       font-size: 1.25rem;
       line-height: 1.5;
       margin-bottom: 2rem;
+      font-family: "Campton-Book";
     }
     .back {
       position: absolute;
