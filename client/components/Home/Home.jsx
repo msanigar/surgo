@@ -59,7 +59,7 @@ class Home extends Component {
     const handleOnDragStart = e => e.preventDefault();
 
     return (
-      <div class="homepage-toplevel-container">
+      <div className="homepage-toplevel-container">
         <Cookies />
         <div className="video-container">
           <div className="video-overlay" />

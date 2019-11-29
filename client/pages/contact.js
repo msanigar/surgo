@@ -35,10 +35,31 @@ class Contact extends Component {
     });
   }
 
-  sendMessage() {
-    this.state.message && this.notice("Your message has been sent!");
-    !this.state.message &&
+  async sendMessage() {
+    const url =
+      "https://api.surgo.gg/wp-content/themes/twentynineteen/email.php";
+    if (this.state.message) {
+      let body = new FormData();
+      body.append(`subject`, `${this.state.selected}`);
+      body.append(`message`, `${this.state.message}`);
+      try {
+        const config = {
+          method: "POST",
+          body: body
+        };
+        const response = await fetch(url, config);
+        if (response.ok) {
+          this.notice("Your message has been sent!");
+          return response;
+        } else {
+          this.notice("Something went wrong!  Please try again later.");
+        }
+      } catch (error) {
+        this.notice(`Something went wrong!  ${error}`);
+      }
+    } else {
       this.notice("Please complete the form before sending!");
+    }
   }
 
   notice(msg) {

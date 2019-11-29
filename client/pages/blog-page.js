@@ -48,7 +48,7 @@ export default class Post extends Component {
           </div>
           <div className="blog-page-wrapper">
             <span
-              className="content book-font"
+              className="content"
               dangerouslySetInnerHTML={{ __html: post.content.rendered }}
             ></span>
             <Link href={{ pathname: "/blog", query: "" }}>
