@@ -3,12 +3,33 @@ import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import Back from "../components/SVG/Back";
 import Nav from "../components/Nav";
+import Post from "../components/Post";
 
 import "../styles/Main.scss";
 
-export default class Post extends Component {
+export default class BlogPage extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      wpData: this.props.wpData
+    };
+  }
+
+  componentDidMount() {
+    let arr = [];
+    fetch(
+      `https://api.surgo.gg/wp-json/wp/v2/posts?categories=${this.props.wpData.post._embedded["wp:term"][0][0].id}`
+    )
+      .then(response => response.json())
+      .then(data =>
+        data.forEach(post => {
+          arr.push(post);
+          console.log(arr);
+          this.setState({ wpData: { relatedPosts: arr } });
+        })
+      );
+    console.log(arr);
   }
 
   render() {
@@ -47,15 +68,39 @@ export default class Post extends Component {
             </div>
           </div>
           <div className="blog-page-wrapper">
-            <span
+            <div
               className="content"
               dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-            ></span>
+            ></div>
             <Link href={{ pathname: "/blog", query: "" }}>
-              <a className="text-link">
+              <a className="text-link back">
                 Back <Back />
               </a>
             </Link>
+            <hr></hr>
+            <div className="blog-related">
+              <h3>Content that relates</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
+                dictumst enim, nisl lectus nulla vitae praesent elementum neque.
+                Non nisl consectetur.
+              </p>
+              <h4>MOST RECENT</h4>
+              <div className="posts">
+                {typeof this.state.wpData.relatedPosts !== "undefined" &&
+                  this.state.wpData.relatedPosts.map((post, i) => {
+                    let newDate = new Date(post.date).toLocaleDateString(
+                      "en-US",
+                      {
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric"
+                      }
+                    );
+                    return <Post key={i} date={newDate} post={post} />;
+                  })}
+              </div>
+            </div>
           </div>
         </div>
         <Nav theme={"dark"} />
@@ -64,7 +109,7 @@ export default class Post extends Component {
   }
 }
 
-Post.getInitialProps = async function({ query }) {
+BlogPage.getInitialProps = async function({ query }) {
   const pageRes = await fetch(
     `https://api.surgo.gg/wp-json/wp/v2/posts?slug=${query.slug}&_embed=1`
   );

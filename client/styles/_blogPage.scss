@@ -60,14 +60,116 @@
     max-width: $screenWidth;
     margin: 0 auto;
 
-    .content {
-      display: flex;
-      flex-direction: column;
+    hr {
+      margin: 5rem 0;
+      border-top: 1px solid $grey-blue;
+    }
 
-      p,
-      figure {
-        text-align: justify;
-        display: inline;
+    .blog-related {
+      .posts {
+        margin-top: 2rem;
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include desktop {
+          grid-column-gap: 2rem;
+          grid-row-gap: 2rem;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .blog-post {
+          margin: 0;
+          padding: 2rem 5rem;
+          text-align: left;
+
+          p {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+          }
+        }
+      }
+      h3 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Campton-Bold";
+        font-weight: bold;
+        letter-spacing: -0.8px;
+      }
+      h4 {
+        font-size: 1rem;
+        margin: 5rem 0;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Campton-Bold";
+        font-weight: bold;
+        letter-spacing: -0.8px;
+      }
+      p {
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+
+        @include desktop {
+          max-width: 50%;
+        }
+      }
+    }
+
+    .content {
+      margin-bottom: 3rem;
+
+      p {
+        margin: 3rem 0;
+        font-family: "Campton-Book";
+        font-size: 1.125rem;
+        line-height: 1.2;
+
+        & strong {
+          font-family: "Campton-Medium";
+          font-weight: 400;
+        }
+      }
+
+      .wp-block-quote {
+        background-color: $grey-blue;
+        padding: 1rem;
+
+        p {
+          margin: 2rem;
+          font-family: "Campton-Medium";
+          font-weight: 400;
+        }
+      }
+
+      .wp-block-image {
+        max-width: 100%;
+        height: auto;
+        margin: 3rem 0;
+        text-align: center;
+        margin-bottom: 6rem;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .text-link {
+      &.back {
+        margin-left: 3rem;
+        svg {
+          left: -3rem;
+          top: 0px;
+          transform: rotate(0deg);
+        }
       }
     }
   }
