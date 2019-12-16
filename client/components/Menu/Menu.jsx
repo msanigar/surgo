@@ -35,9 +35,6 @@ const Menu = ({ show, hide }) => {
               <Link href={"/blog"}>
                 <a>Blog</a>
               </Link>
-              <Link href={"/brand"}>
-                <a>Brand</a>
-              </Link>
               <Link href={"/terms"}>
                 <a>Terms</a>
               </Link>
