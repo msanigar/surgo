@@ -65,7 +65,7 @@ class Cookies extends Component {
             <h3>Our website uses Cookies:</h3>
             <p>
               Go to preferences to change your cookie settings, or if you are
-              happy to continue to press fuck off.
+              happy to continue to press "go away".
             </p>
             <div>
               <Button
@@ -74,7 +74,7 @@ class Cookies extends Component {
                 theme={"dark"}
               />
               <Button
-                text={"Fuck off."}
+                text={"Go away."}
                 clickFunc={this.hideBanner}
                 theme={"dark"}
               />
@@ -84,13 +84,13 @@ class Cookies extends Component {
 
         {this.state.bannerVisible == true && this.state.prefsVisible == true && (
           <Fragment>
-            <p className="cookie-preferences">
+            <p className='cookie-preferences'>
               We use Google Analytics and Google Tag Manager cookies to ensure
               you get the best experience on our website.
             </p>
             <p>
               You can opt-out by clicking{" "}
-              <span className="cookie-link" onClick={this.optOut}>
+              <span className='cookie-link' onClick={this.optOut}>
                 here
               </span>
               .
@@ -106,7 +106,7 @@ class Cookies extends Component {
         )}
 
         {this.state.bannerVisible == false && (
-          <span className="show-cookie-prefs" onClick={this.showBanner}>
+          <span className='show-cookie-prefs' onClick={this.showBanner}>
             {" "}
             Cookies Preferences{" "}
           </span>
