@@ -12,16 +12,6 @@
   }
 }
 
-.homepage-toplevel-container {
-  .nav {
-    @include desktop {
-      position: relative;
-      max-width: $screenWidth;
-      margin: 0 auto;
-    }
-  }
-}
-
 .home-1 {
   background: url("./img/home-bg.png");
   background-size: cover;
