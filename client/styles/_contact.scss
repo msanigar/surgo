@@ -116,6 +116,10 @@
     line-height: 2;
     font-size: 1.25rem;
     border: solid 1px $grey-blue;
+
+    &.fakeMessage {
+      display: none;
+    }
   }
 
   input {

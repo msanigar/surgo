@@ -12,6 +12,7 @@ class Contact extends Component {
 
     this.selectablePeople = this.selectablePeople.bind(this);
     this.messageUpdated = this.messageUpdated.bind(this);
+    this.fakeMessageUpdated = this.fakeMessageUpdated.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
     this.notice = this.notice.bind(this);
 
@@ -19,6 +20,7 @@ class Contact extends Component {
       selectables: ["Operations", "Sales", "Design"],
       selected: "Operations",
       message: "",
+      fakeMessage: "",
       notification: null
     };
   }
@@ -35,10 +37,16 @@ class Contact extends Component {
     });
   }
 
+  fakeMessageUpdated(e) {
+    this.setState({
+      fakeMessage: e.target.value
+    });
+  }
+
   async sendMessage() {
     const url =
       "https://api.surgo.gg/wp-content/themes/twentynineteen/email.php";
-    if (this.state.message) {
+    if (this.state.message && !this.state.fakeMessage) {
       let body = new FormData();
       body.append(`subject`, `${this.state.selected}`);
       body.append(`message`, `${this.state.message}`);
@@ -92,15 +100,15 @@ class Contact extends Component {
       : "contact-notification";
     return (
       <React.Fragment>
-        <div className="contact">
+        <div className='contact'>
           <div className={classes}>
             <p>{this.state.notification}</p>
           </div>
-          <div className="container">
+          <div className='container'>
             <div>
               <h3>Contact</h3>
-              <p className="people-contact">Who are you trying to reach?</p>
-              <ul className="people-list">
+              <p className='people-contact'>Who are you trying to reach?</p>
+              <ul className='people-list'>
                 {this.state.selectables.map((val, i) => {
                   return (
                     <li
@@ -115,20 +123,29 @@ class Contact extends Component {
               </ul>
             </div>
             <div>
-              <p className="people-contact">What's your message? </p>
+              <p className='people-contact'>What's your message? </p>
               <textarea
-                placeholder=""
+                placeholder=''
                 onChange={this.messageUpdated}
                 value={this.state.message}
-                maxLength="1000"
-                cols="30"
-                rows="5"
+                maxLength='1000'
+                cols='30'
+                rows='5'
               ></textarea>
-              <div className="btn-container">
+              <textarea
+                placeholder=''
+                onChange={this.fakeMessageUpdated}
+                value={this.state.fakeMessage}
+                maxLength='1000'
+                cols='30'
+                rows='5'
+                className='fakeMessage'
+              ></textarea>
+              <div className='btn-container'>
                 <Button
                   clickFunc={this.sendMessage}
-                  text="Send Message"
-                  theme="dark"
+                  text='Send Message'
+                  theme='dark'
                 />
               </div>
             </div>
