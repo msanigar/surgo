@@ -2,6 +2,10 @@
   margin-bottom: 10vh;
   min-height: 90vh;
 
+  .captcha_wrapper-hide {
+    display: none !important;
+  }
+
   .contact-notification {
     position: fixed;
     height: 0;

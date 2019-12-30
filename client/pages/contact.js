@@ -141,6 +141,23 @@ class Contact extends Component {
                 rows='5'
                 className='fakeMessage'
               ></textarea>
+              <script
+                src='https://www.google.com/recaptcha/api.js'
+                async
+                defer
+              ></script>
+              <div
+                className={
+                  this.state.message.length > 0
+                    ? "captcha_wrapper"
+                    : "captcha_wrapper-hide"
+                }
+              >
+                <div
+                  className='g-recaptcha'
+                  data-sitekey='6Lf_FMsUAAAAAP8-6bZ6VB3cHwSC8jK3t_OJZ6Ef'
+                ></div>
+              </div>
               <div className='btn-container'>
                 <Button
                   clickFunc={this.sendMessage}
