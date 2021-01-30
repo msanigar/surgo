@@ -21,31 +21,31 @@ class Contact extends Component {
       selected: "Operations",
       message: "",
       fakeMessage: "",
-      notification: null
+      notification: null,
     };
   }
 
   selectablePeople(val) {
     this.setState({
-      selected: val
+      selected: val,
     });
   }
 
   messageUpdated(e) {
     this.setState({
-      message: e.target.value
+      message: e.target.value,
     });
   }
 
   fakeMessageUpdated(e) {
     this.setState({
-      fakeMessage: e.target.value
+      fakeMessage: e.target.value,
     });
   }
 
   async sendMessage() {
     const url =
-      "https://api.surgo.gg/wp-content/themes/twentynineteen/email.php";
+      "https://api.myles.im/wp-content/themes/twentynineteen/email.php";
     if (this.state.message && !this.state.fakeMessage) {
       let body = new FormData();
       body.append(`subject`, `${this.state.selected}`);
@@ -53,7 +53,7 @@ class Contact extends Component {
       try {
         const config = {
           method: "POST",
-          body: body
+          body: body,
         };
         const response = await fetch(url, config);
         if (response.ok) {
@@ -72,7 +72,7 @@ class Contact extends Component {
 
   notice(msg) {
     // we need to queue these up, this is the best I could come up with quickly
-    this.wait = msg => {
+    this.wait = (msg) => {
       if (this.state.notification) {
         setTimeout(() => {
           this.wait(msg);
@@ -80,12 +80,12 @@ class Contact extends Component {
       } else {
         this.setState({
           notification: msg,
-          message: ""
+          message: "",
         });
 
         setTimeout(() => {
           this.setState({
-            notification: null
+            notification: null,
           });
         }, 3000);
       }

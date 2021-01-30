@@ -18,18 +18,18 @@ class Index extends Component {
   }
 }
 
-Index.getInitialProps = async function() {
-  const pageRes = await fetch("https://api.surgo.gg/wp-json/wp/v2/posts");
+Index.getInitialProps = async function () {
+  const pageRes = await fetch("https://api.myles.im/wp-json/wp/v2/posts");
   const pageData = await pageRes.json();
   let wpData = {};
   let arr = [];
 
-  pageData.forEach(post => {
+  pageData.forEach((post) => {
     // only return latest 3
     arr.length < 6 && arr.push(post);
     return (wpData = {
       ...wpData,
-      posts: arr
+      posts: arr,
     });
   });
 

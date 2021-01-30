@@ -12,18 +12,18 @@ export default class BlogPage extends Component {
     super(props);
 
     this.state = {
-      wpData: this.props.wpData
+      wpData: this.props.wpData,
     };
   }
 
   componentDidMount() {
     let arr = [];
     fetch(
-      `https://api.surgo.gg/wp-json/wp/v2/posts?categories=${this.props.wpData.post._embedded["wp:term"][0][0].id}`
+      `https://api.myles.im/wp-json/wp/v2/posts?categories=${this.props.wpData.post._embedded["wp:term"][0][0].id}`
     )
-      .then(response => response.json())
-      .then(data =>
-        data.forEach(post => {
+      .then((response) => response.json())
+      .then((data) =>
+        data.forEach((post) => {
           arr.push(post);
           console.log(arr);
           this.setState({ wpData: { relatedPosts: arr } });
@@ -37,16 +37,16 @@ export default class BlogPage extends Component {
     let date = new Date(post.date).toLocaleDateString("en-US", {
       month: "long",
       day: "numeric",
-      year: "numeric"
+      year: "numeric",
     });
     return (
       <React.Fragment>
-        <div className="blog-page-container">
-          <div className="blog-page-top">
-            <div className="blog-page-title">
+        <div className='blog-page-container'>
+          <div className='blog-page-top'>
+            <div className='blog-page-title'>
               <h2> {post.title.rendered} </h2>
             </div>
-            <div className="blog-page-meta">
+            <div className='blog-page-meta'>
               <div>
                 <p>
                   Post Category: <br />
@@ -67,18 +67,18 @@ export default class BlogPage extends Component {
               </div>
             </div>
           </div>
-          <div className="blog-page-wrapper">
+          <div className='blog-page-wrapper'>
             <div
-              className="content"
+              className='content'
               dangerouslySetInnerHTML={{ __html: post.content.rendered }}
             ></div>
             <Link href={{ pathname: "/blog", query: "" }}>
-              <a className="text-link back">
+              <a className='text-link back'>
                 Back <Back />
               </a>
             </Link>
             <hr></hr>
-            <div className="blog-related">
+            <div className='blog-related'>
               <h3>Content that relates</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
@@ -86,7 +86,7 @@ export default class BlogPage extends Component {
                 Non nisl consectetur.
               </p>
               <h4>MOST RECENT</h4>
-              <div className="posts">
+              <div className='posts'>
                 {typeof this.state.wpData.relatedPosts !== "undefined" &&
                   this.state.wpData.relatedPosts.map((post, i) => {
                     let newDate = new Date(post.date).toLocaleDateString(
@@ -94,7 +94,7 @@ export default class BlogPage extends Component {
                       {
                         month: "long",
                         day: "numeric",
-                        year: "numeric"
+                        year: "numeric",
                       }
                     );
                     return <Post key={i} date={newDate} post={post} />;
@@ -109,17 +109,17 @@ export default class BlogPage extends Component {
   }
 }
 
-BlogPage.getInitialProps = async function({ query }) {
+BlogPage.getInitialProps = async function ({ query }) {
   const pageRes = await fetch(
-    `https://api.surgo.gg/wp-json/wp/v2/posts?slug=${query.slug}&_embed=1`
+    `https://api.myles.im/wp-json/wp/v2/posts?slug=${query.slug}&_embed=1`
   );
   const pageData = await pageRes.json();
   let wpData = {};
 
-  pageData.forEach(post => {
+  pageData.forEach((post) => {
     return (wpData = {
       ...wpData,
-      post: post
+      post: post,
     });
   });
 

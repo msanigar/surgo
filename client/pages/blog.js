@@ -15,10 +15,10 @@ class Blog extends Component {
       options: [
         {
           value: "",
-          label: "All"
-        }
+          label: "All",
+        },
       ],
-      wpData: this.props.wpData
+      wpData: this.props.wpData,
     };
 
     this.changed = this.changed.bind(this);
@@ -33,8 +33,8 @@ class Blog extends Component {
     let options = [
       {
         value: "",
-        label: "All"
-      }
+        label: "All",
+      },
     ];
 
     {
@@ -44,16 +44,16 @@ class Blog extends Component {
     }
 
     this.setState({
-      options: options
+      options: options,
     });
   }
 
   changed(e) {
     let arr = [];
-    fetch(`https://api.surgo.gg/wp-json/wp/v2/posts?categories=${e.value}`)
-      .then(response => response.json())
-      .then(data =>
-        data.forEach(post => {
+    fetch(`https://api.myles.im/wp-json/wp/v2/posts?categories=${e.value}`)
+      .then((response) => response.json())
+      .then((data) =>
+        data.forEach((post) => {
           arr.push(post);
           this.setState({ wpData: { posts: arr } });
         })
@@ -63,24 +63,24 @@ class Blog extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="blog-filters">
-          <div className="blog-filters-wrapper">
+        <div className='blog-filters'>
+          <div className='blog-filters-wrapper'>
             <Select
               instanceId={"0"}
-              className="react-select-container"
-              classNamePrefix="react-select"
+              className='react-select-container'
+              classNamePrefix='react-select'
               options={this.state.options}
               onChange={this.changed}
             />
           </div>
         </div>
-        <div className="blog-container">
-          <div className="posts">
+        <div className='blog-container'>
+          <div className='posts'>
             {this.state.wpData.posts.map((post, i) => {
               let newDate = new Date(post.date).toLocaleDateString("en-US", {
                 month: "long",
                 day: "numeric",
-                year: "numeric"
+                year: "numeric",
               });
               return <Post key={i} date={newDate} post={post} />;
             })}
@@ -92,20 +92,20 @@ class Blog extends Component {
   }
 }
 
-Blog.getInitialProps = async function() {
-  const pageRes = await fetch("https://api.surgo.gg/wp-json/wp/v2/posts");
-  const catRes = await fetch("https://api.surgo.gg/wp-json/wp/v2/categories");
+Blog.getInitialProps = async function () {
+  const pageRes = await fetch("https://api.myles.im/wp-json/wp/v2/posts");
+  const catRes = await fetch("https://api.myles.im/wp-json/wp/v2/categories");
   const catData = await catRes.json();
   const pageData = await pageRes.json();
   let wpData = {};
   let arr = [];
 
-  pageData.forEach(post => {
+  pageData.forEach((post) => {
     arr.push(post);
     return (wpData = {
       ...wpData,
       cats: catData,
-      posts: arr
+      posts: arr,
     });
   });
 
