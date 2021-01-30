@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Signup from "../components/Signup";
 import Button from "../components/Button";
 
-import Back from "../components/SVG/Back";
 import Nav from "../components/Nav";
 
 import "../styles/Main.scss";
@@ -16,10 +15,10 @@ class faq extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="faq">
-          <div className="container">
+        <div className='faq'>
+          <div className='container'>
             <h2>Frequently Asked Questions</h2>
-            <h3 id="0">How much does Surgo cost?</h3>
+            <h3 id='0'>How much does Surgo cost?</h3>
             <p>
               We can not give you an accurate price guide for our services -
               This is because every business we work with is different both in
@@ -30,7 +29,7 @@ class faq extends Component {
               length of time you wish to work with us.
             </p>
 
-            <h3 id="1">How long does Surgo take to do?</h3>
+            <h3 id='1'>How long does Surgo take to do?</h3>
             <p>
               Surgo services can take months to fully implement - this, as
               mentioned before (in pricing) is based on the scale of your
@@ -41,7 +40,7 @@ class faq extends Component {
               the quality of service your company recieves moves the needle.
             </p>
 
-            <h3 id="2">Who do we work with? </h3>
+            <h3 id='2'>Who do we work with? </h3>
             <p>
               Our services brought to you through our unique and exclusive
               partnership agreements. This means you will liase with Surgo’s
@@ -51,7 +50,7 @@ class faq extends Component {
               Surgo meet expectations.
             </p>
 
-            <h3 id="3">Who runs the programmes?</h3>
+            <h3 id='3'>Who runs the programmes?</h3>
             <p>
               Our programmes are deployed through us by our partners to ensure
               the standard in which we work to is kept at the upmost best. Some
@@ -60,7 +59,7 @@ class faq extends Component {
               or will be held by our partners.
             </p>
 
-            <h3 id="4">Do you offer sponsorship to teams and events?</h3>
+            <h3 id='4'>Do you offer sponsorship to teams and events?</h3>
             <p>
               Surgo does offer partnerships with teams and events under some
               circumstances, however we are not looking sponsor teams and/or
@@ -68,7 +67,7 @@ class faq extends Component {
               freely.
             </p>
 
-            <h3 id="5">When is Surgo available?</h3>
+            <h3 id='5'>When is Surgo available?</h3>
             <p>
               As of Q2 2020, Surgo will be ready to onboard more clientele and
               partners. If you are interested in getting Surgo for your
@@ -76,7 +75,7 @@ class faq extends Component {
               representatives.
             </p>
 
-            <h3 id="6">Why does the case study always come first? </h3>
+            <h3 id='6'>Why does the case study always come first? </h3>
             <p>
               The case study sheds light on how your company’s employees value
               themselves, their work and their performance on the job. The
@@ -86,7 +85,7 @@ class faq extends Component {
               proactively.
             </p>
 
-            <h3 id="7">Why do we need to complete a pilot programme? </h3>
+            <h3 id='7'>Why do we need to complete a pilot programme? </h3>
             <p>
               The pilot programme tests our case study theories in a
               sandbox-like enviroment. allowing your most experience staff to
@@ -98,7 +97,7 @@ class faq extends Component {
               before continuing on to a full roll out.
             </p>
 
-            <h3 id="8">Do you offer consultancy with the programmes?</h3>
+            <h3 id='8'>Do you offer consultancy with the programmes?</h3>
             <p>
               By joining Surgo, you automatically recieve SoS meetings and have
               access to all our partners support too - helping to cover all the
@@ -111,11 +110,11 @@ class faq extends Component {
 
             <Signup light={true} />
 
-            <h2 className="bottom">Up for a chat?</h2>
-            <h3 className="bottom">
+            <h2 className='bottom'>Up for a chat?</h2>
+            <h3 className='bottom'>
               Whether you want to know more or start a programme{" "}
             </h3>
-            <div className="btn-container">
+            <div className='btn-container'>
               <Button theme={"dark"} link={"contact"} text={"Contact us"} />
             </div>
           </div>
