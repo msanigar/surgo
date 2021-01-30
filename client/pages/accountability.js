@@ -14,20 +14,20 @@ class Accountability extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="advice-container">
-          <div className="top">
-            <div className="text">
+        <div className='advice-container'>
+          <div className='top'>
+            <div className='text'>
               <p>The problem is</p>
-              <h2 className="red-text book-font">
+              <h2 className='red-text book-font'>
                 The problem is Esports athletes are not actively trying to take
                 control of their hectic schedule.
               </h2>
             </div>
-            <div className="next red-bg book-font">
-              <div className="next-container">
+            <div className='next red-bg book-font'>
+              <div className='next-container'>
                 <p>How we solve this</p>
                 <Chevron />
-                <div className="next-text">
+                <div className='next-text'>
                   <p>Accountability</p>
                   <hr></hr>
                   <h4>
@@ -38,7 +38,7 @@ class Accountability extends Component {
               </div>
             </div>
           </div>
-          <div className="middle book-font">
+          <div className='middle book-font'>
             <h2>How does this help players</h2>
             <span>
               <h3>Staying in control</h3>
@@ -71,12 +71,12 @@ class Accountability extends Component {
                 making them more efficient.
               </p>
             </span>
-            <div className="black">
-              <p className="red-text book-font">
+            <div className='black'>
+              <p className='red-text book-font'>
                 Accountability is designed to give players full control over
                 their lives by training them to structure it more efficiently.
               </p>
-              <p className="red-text book-font">
+              <p className='red-text book-font'>
                 Players who account for their actions see a dramatic improvement
                 in their in-game performance within 3-6 months.
               </p>
@@ -86,40 +86,46 @@ class Accountability extends Component {
               <span>
                 <p>June 2019</p>
                 <h4>The World of Caffeine</h4>
-                <div className="btn-container">
-                  <Button theme="dark" text="Read study" />
+                <div className='btn-container'>
+                  <Link href={"/blog"}>
+                    <Button theme='dark' text='Read study' />
+                  </Link>
                 </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Essential Oils</h4>
-                <div className="btn-container">
-                  <Button theme="dark" text="Read study" />
+                <div className='btn-container'>
+                  <Link href={"/blog"}>
+                    <Button theme='dark' text='Read study' />
+                  </Link>
                 </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Sleep vs. Esports</h4>
-                <div className="btn-container">
-                  <Button theme="dark" text="Read study" />
+                <div className='btn-container'>
+                  <Link href={"/blog"}>
+                    <Button theme='dark' text='Read study' />
+                  </Link>
                 </div>
               </span>
             </div>
           </div>
-          <div className="bottom">
-            <div className="signup red-bg">
+          <div className='bottom'>
+            <div className='signup red-bg'>
               <Signup />
             </div>
-            <div className="bottom-footer">
-              <p className="red-text">Did this section help at all?</p>
+            <div className='bottom-footer'>
+              <p className='red-text'>Did this section help at all?</p>
               <h3>
                 If you still have questions - check out our FAQ or contact us.
               </h3>
               <div
-                className="btn-container"
+                className='btn-container'
                 onClick={() => window.history.back()}
               >
-                <Button text="Go back" theme="light" />
+                <Button text='Go back' theme='light' />
               </div>
             </div>
           </div>

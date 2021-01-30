@@ -14,20 +14,20 @@ class PerformanceStrategy extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="advice-container">
-          <div className="top">
-            <div className="text">
+        <div className='advice-container'>
+          <div className='top'>
+            <div className='text'>
               <p>The problem is</p>
-              <h2 className="yellow-text book-font">
+              <h2 className='yellow-text book-font'>
                 Esports athletes see their inconsistent performance solely as a
                 gameplay issue.
               </h2>
             </div>
-            <div className="next yellow-bg book-font">
-              <div className="next-container">
+            <div className='next yellow-bg book-font'>
+              <div className='next-container'>
                 <p>How we solve this</p>
                 <Chevron />
-                <div className="next-text">
+                <div className='next-text'>
                   <p>Performance Strategy</p>
                   <hr></hr>
                   <h4>
@@ -38,7 +38,7 @@ class PerformanceStrategy extends Component {
               </div>
             </div>
           </div>
-          <div className="middle book-font">
+          <div className='middle book-font'>
             <h2>How does this help players</h2>
             <span>
               <h3>Dietary needs</h3>
@@ -72,12 +72,12 @@ class PerformanceStrategy extends Component {
                 more.
               </p>
             </span>
-            <div className="black">
-              <p className="yellow-text book-font">
+            <div className='black'>
+              <p className='yellow-text book-font'>
                 Our performance strategy is designed to turn what we think, say
                 and motivates us into real, productive results.
               </p>
-              <p className="yellow-text book-font">
+              <p className='yellow-text book-font'>
                 Players who follow our performance strategy see a dramatic
                 improvement in their in-game performance within 3-6 months.
               </p>
@@ -87,40 +87,46 @@ class PerformanceStrategy extends Component {
               <span>
                 <p>June 2019</p>
                 <h4>The World of Caffeine</h4>
-                <div className="btn-container">
-                  <Button theme="dark" text="Read study" />
+                <div className='btn-container'>
+                  <Link href={"/blog"}>
+                    <Button theme='dark' text='Read study' />
+                  </Link>
                 </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Essential Oils</h4>
-                <div className="btn-container">
-                  <Button theme="dark" text="Read study" />
+                <div className='btn-container'>
+                  <Link href={"/blog"}>
+                    <Button theme='dark' text='Read study' />
+                  </Link>
                 </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Sleep vs. Esports</h4>
-                <div className="btn-container">
-                  <Button theme="dark" text="Read study" />
+                <div className='btn-container'>
+                  <Link href={"/blog"}>
+                    <Button theme='dark' text='Read study' />
+                  </Link>
                 </div>
               </span>
             </div>
           </div>
-          <div className="bottom">
-            <div className="signup yellow-bg">
+          <div className='bottom'>
+            <div className='signup yellow-bg'>
               <Signup />
             </div>
-            <div className="bottom-footer">
-              <p className="yellow-text">Did this section help at all?</p>
+            <div className='bottom-footer'>
+              <p className='yellow-text'>Did this section help at all?</p>
               <h3>
                 If you still have questions - check out our FAQ or contact us.
               </h3>
               <div
-                className="btn-container"
+                className='btn-container'
                 onClick={() => window.history.back()}
               >
-                <Button text="Go back" theme="light" />
+                <Button text='Go back' theme='light' />
               </div>
             </div>
           </div>

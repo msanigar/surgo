@@ -4,9 +4,9 @@
   "description": "https://github.com/myles91/surgo",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 3007",
+    "dev": "next -p 3008",
     "build": "next build",
-    "start": "next start -p 3007"
+    "start": "next start -p 3008"
   },
   "keywords": [],
   "author": "",

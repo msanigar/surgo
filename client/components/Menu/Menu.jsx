@@ -26,43 +26,31 @@ const Menu = ({ show, hide }) => {
               <Link href={"/about"}>
                 <a>About us</a>
               </Link>
-              <Link href={"/about#missions"}>
-                <a>Mission</a>
-              </Link>
               <Link href={"/contact"}>
                 <a>Contact</a>
               </Link>
               <Link href={"/blog"}>
                 <a>Blog</a>
               </Link>
-              <Link href={"/terms"}>
-                <a>Terms</a>
+              <Link href={"/faq"}>
+                <a>FAQ</a>
               </Link>
             </div>
 
             <div className='menu-content-box'>
               <h4>Services</h4>
-              <Link href={"/about"}>
-                <a>Case Studies</a>
+              <Link href={"/performance-strategy"}>
+                <a>performance Strategy</a>
               </Link>
-              <Link href={"/about"}>
-                <a>Pilot Programmes</a>
+              <Link href={"/habit-hacking"}>
+                <a>Habit Hacking</a>
               </Link>
-              <Link href={"/about"}>
-                <a>Wealth Management</a>
-              </Link>
-              <Link href={"/about"}>
-                <a>Nutrition & Dieting</a>
-              </Link>
-              <Link href={"/about"}>
-                <a>Strength & Conditioning</a>
-              </Link>
-              <Link href={"/about"}>
-                <a>Team dynamics & Comms</a>
+              <Link href={"/accountability"}>
+                <a>Accountability</a>
               </Link>
             </div>
 
-            <div className='menu-content-box'>
+            {/* <div className='menu-content-box'>
               <h4>FAQ</h4>
               <Link href={"/faq#0"}>
                 <a>How much does Surgo cost?</a>
@@ -85,7 +73,7 @@ const Menu = ({ show, hide }) => {
               <Link href={"/faq#6"}>
                 <a>When is it available to buy?</a>
               </Link>
-            </div>
+            </div> */}
 
             <div className='menu-content-box'>
               <h4>Social</h4>
