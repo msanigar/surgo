@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Back from "../components/SVG/Back";
 import Nav from "../components/Nav";
 import Button from "../components/Button";
 
