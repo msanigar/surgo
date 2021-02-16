@@ -19,7 +19,7 @@
     "next-assets-import": "0.0.2",
     "next-fonts": "^0.18.0",
     "next-images": "^1.1.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "postcss-easy-import": "^3.0.0",
     "postcss-flexbugs-fixes": "^4.0.0",
     "postcss-loader": "^2.1.6",
