@@ -14,8 +14,6 @@ import Cookies from "../Cookies";
 
 import Link from "next/link";
 
-import coverVideo from "../../styles/img/2825068_1080.mp4";
-
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -62,7 +60,7 @@ class Home extends Component {
         <div className="video-container">
           <div className="video-overlay" />
           <video autoPlay muted loop className="cover-video">
-            <source src={coverVideo} type="video/mp4" />
+            <source src={"/2825068_1080.mp4"} type="video/mp4" />
           </video>
         </div>
         <div className="home home-1">

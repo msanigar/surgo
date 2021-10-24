@@ -1,19 +1,8 @@
 import React, { Component } from "react";
-import Image from "next/image";
 import Mission from "../components/SVG/Mission";
 import Careers from "../components/SVG/Careers";
 import Nav from "../components/Nav";
 import Signup from "../components/Signup";
-
-import Profile from "../styles/img/profile.png";
-import Profile2 from "../styles/img/profile2.png";
-import Profile3 from "../styles/img/profile3.png";
-import Profile4 from "../styles/img/profile4.png";
-import Profile5 from "../styles/img/profile5.png";
-import Profile6 from "../styles/img/profile6.png";
-import Profile7 from "../styles/img/profile7.png";
-import Profile8 from "../styles/img/profile8.png";
-import Profile9 from "../styles/img/profile9.png";
 
 class About extends Component {
   constructor(props) {
@@ -97,100 +86,73 @@ class About extends Component {
               <h3>Meet the team bringing Surgo to life</h3>
               <div className="team">
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Alex Byfield - Managing Director"
-                    src={Profile}
-                    layout={"fixed"}
+                    src={"profile.png"}
                   />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Christina McGrath - Head of Sports"
-                    src={Profile2}
-                    layout={"fixed"}
+                    src={"profile2.png"}
                   />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Gareth Sissons - Creative Director"
-                    src={Profile3}
-                    layout={"fixed"}
+                    src={"profile3.png"}
                   />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Alex Byfield - Managing Director"
-                    src={Profile4}
-                    layout={"fixed"}
+                    src={"profile4.png"}
                   />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Christina McGrath - Head of Sports"
-                    src={Profile5}
-                    layout={"fixed"}
+                    src={"profile5.png"}
                   />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Gareth Sissons - Creative Director"
-                    src={Profile6}
-                    layout={"fixed"}
+                    src={"profile6.png"}
                   />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Alex Byfield - Managing Director"
-                    src={Profile7}
-                    layout={"fixed"}
+                    src={"profile7.png"}
                   />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Christina McGrath - Head of Sports"
-                    src={Profile8}
-                    layout={"fixed"}
+                    src={"profile8.png"}
                   />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <Image
-                    height={"164px"}
-                    width={"164px"}
+                  <img
                     alt="Gareth Sissons - Creative Director"
-                    src={Profile9}
-                    layout={"fixed"}
+                    src={"profile9.png"}
                   />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
