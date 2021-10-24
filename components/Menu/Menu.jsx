@@ -9,16 +9,16 @@ const currentYear = new Date().getFullYear();
 const Menu = ({ show, hide }) => {
   return (
     <div className={show ? "menu open" : "menu"}>
-      <div className='menu-container'>
-        <div className='menu-header'>
+      <div className="menu-container">
+        <div className="menu-header">
           <Signup />
-          <div className='cross light-font' onClick={() => hide()}>
+          <div className="cross light-font" onClick={() => hide()}>
             <Close />
           </div>
         </div>
-        <div className='menu-content'>
-          <div className='menu-wrapper'>
-            <div className='menu-content-box'>
+        <div className="menu-content">
+          <div className="menu-wrapper">
+            <div className="menu-content-box">
               <h4>Surgo</h4>
               <Link href={"/"}>
                 <a>Home</a>
@@ -29,15 +29,12 @@ const Menu = ({ show, hide }) => {
               <Link href={"/contact"}>
                 <a>Contact</a>
               </Link>
-              <Link href={"/blog"}>
-                <a>Blog</a>
-              </Link>
               <Link href={"/faq"}>
                 <a>FAQ</a>
               </Link>
             </div>
 
-            <div className='menu-content-box'>
+            <div className="menu-content-box">
               <h4>Services</h4>
               <Link href={"/performance-strategy"}>
                 <a>performance Strategy</a>
@@ -75,7 +72,7 @@ const Menu = ({ show, hide }) => {
               </Link>
             </div> */}
 
-            <div className='menu-content-box'>
+            <div className="menu-content-box">
               <h4>Social</h4>
               <Link href={"/faq"}>
                 <a>Twitter</a>
@@ -89,7 +86,7 @@ const Menu = ({ show, hide }) => {
             </div>
           </div>
         </div>
-        <div className='menu-footer'>
+        <div className="menu-footer">
           <p>
             Copyright &copy; {currentYear}- Surgo Consulting Ltd. Headquarters:
             London, United Kingdom. All rights reserved. Surgo Consulting Ltd.

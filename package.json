@@ -1,12 +1,13 @@
 {
   "name": "surgo",
   "version": "1.0.0",
-  "description": "https://github.com/myles91/surgo",
+  "description": "https://github.com/msanigar/surgo",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 3008",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3008"
+    "export": "next build && next export -o ./dist",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,6 @@
     "next-assets-import": "0.0.2",
     "next-fonts": "^0.18.0",
     "next-images": "^1.1.2",
-    "node-sass": "^4.11.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-flexbugs-fixes": "^4.0.0",
     "postcss-loader": "^2.1.6",
@@ -28,6 +28,7 @@
     "react-dom": "^16.8.6",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-select": "^3.0.8",
+    "sass": "^1.43.3",
     "sass-loader": "^7.0.3"
   },
   "browserslist": [

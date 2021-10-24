@@ -13,7 +13,7 @@ const Post = ({ i, date, post }) => {
         className="content book-font"
         dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
       ></span>
-      <Link href={{ pathname: "/blog-page", query: { slug: post.slug } }}>
+      <Link href={{ pathname: "/", query: { slug: post.slug } }}>
         <a className="text-link">
           Read <Back />
         </a>

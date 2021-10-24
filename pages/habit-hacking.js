@@ -16,20 +16,20 @@ class HabitHacking extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className='advice-container'>
-          <div className='top'>
-            <div className='text'>
+        <div className="advice-container">
+          <div className="top">
+            <div className="text">
               <p>The problem is</p>
-              <h2 className='green-text book-font'>
+              <h2 className="green-text book-font">
                 The problem is Esports athletes currently develope unhealthy
                 habits that hinder their success as an ath-lete dramatically
               </h2>
             </div>
-            <div className='next green-bg book-font'>
-              <div className='next-container'>
+            <div className="next green-bg book-font">
+              <div className="next-container">
                 <p>How we solve this</p>
                 <Chevron />
-                <div className='next-text'>
+                <div className="next-text">
                   <p>Habit Hacking</p>
                   <hr></hr>
                   <h4>We create healthy habits to replace the old ones.</h4>
@@ -38,7 +38,7 @@ class HabitHacking extends Component {
               </div>
             </div>
           </div>
-          <div className='middle book-font'>
+          <div className="middle book-font">
             <h2>How does this help players</h2>
             <span>
               <h3>Happy players</h3>
@@ -70,12 +70,12 @@ class HabitHacking extends Component {
                 information from practice and apply it in game more efficiently.
               </p>
             </span>
-            <div className='black'>
-              <p className='green-text book-font'>
+            <div className="black">
+              <p className="green-text book-font">
                 Accountability is designed to give players full control over
                 their lives by training them to structure it more efficiently.
               </p>
-              <p className='green-text book-font'>
+              <p className="green-text book-font">
                 Players who account for their actions see a dramatic improvement
                 in their in-game performance within 3-6 months.
               </p>
@@ -85,46 +85,46 @@ class HabitHacking extends Component {
               <span>
                 <p>June 2019</p>
                 <h4>The World of Caffeine</h4>
-                <div className='btn-container'>
-                  <Link href={"/blog"}>
-                    <Button theme='dark' text='Read study' />
+                <div className="btn-container">
+                  <Link href={"/"}>
+                    <Button theme="dark" text="Read study" />
                   </Link>
                 </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Essential Oils</h4>
-                <div className='btn-container'>
-                  <Link href={"/blog"}>
-                    <Button theme='dark' text='Read study' />
+                <div className="btn-container">
+                  <Link href={"/"}>
+                    <Button theme="dark" text="Read study" />
                   </Link>
                 </div>
               </span>
               <span>
                 <p>June 2019</p>
                 <h4>Sleep vs. Esports</h4>
-                <div className='btn-container'>
-                  <Link href={"/blog"}>
-                    <Button theme='dark' text='Read study' />
+                <div className="btn-container">
+                  <Link href={"/"}>
+                    <Button theme="dark" text="Read study" />
                   </Link>
                 </div>
               </span>
             </div>
           </div>
-          <div className='bottom'>
-            <div className='signup green-bg'>
+          <div className="bottom">
+            <div className="signup green-bg">
               <Signup />
             </div>
-            <div className='bottom-footer'>
-              <p className='green-text'>Did this section help at all?</p>
+            <div className="bottom-footer">
+              <p className="green-text">Did this section help at all?</p>
               <h3>
                 If you still have questions - check out our FAQ or contact us.
               </h3>
               <div
-                className='btn-container'
+                className="btn-container"
                 onClick={() => window.history.back()}
               >
-                <Button text='Go back' theme='light' />
+                <Button text="Go back" theme="light" />
               </div>
             </div>
           </div>

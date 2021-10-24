@@ -1,2 +1,1 @@
-# npm run dev
-# force a deploy
+# yarn, yarn dev

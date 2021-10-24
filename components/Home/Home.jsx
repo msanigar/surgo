@@ -59,15 +59,15 @@ class Home extends Component {
     const handleOnDragStart = (e) => e.preventDefault();
 
     return (
-      <div className='homepage-toplevel-container'>
+      <div className="homepage-toplevel-container">
         <Cookies />
-        <div className='video-container'>
-          <div className='video-overlay' />
-          <video autoPlay muted loop className='cover-video'>
-            <source src={coverVideo} type='video/mp4' />
+        <div className="video-container">
+          <div className="video-overlay" />
+          <video autoPlay muted loop className="cover-video">
+            <source src={coverVideo} type="video/mp4" />
           </video>
         </div>
-        <div className='home home-1'>
+        <div className="home home-1">
           <div>
             <h1>Time to rise.</h1>
             <h2>Surgo is a pioneer in Health & Wellbeing in Esports.</h2>
@@ -77,22 +77,22 @@ class Home extends Component {
           </div>
         </div>
         <Nav />
-        <div className='home home-2'>
-          <h3 className='home-title'>Surgo means</h3>
+        <div className="home home-2">
+          <h3 className="home-title">Surgo means</h3>
           <hr />
-          <h2 className='home-surgo-means'>
+          <h2 className="home-surgo-means">
             To rise, to lift yourself, to climb up, to move upwards.
           </h2>
-          <div className='btn-container'>
+          <div className="btn-container">
             <Button link={"about"} text={"About us"} />
           </div>
         </div>
 
-        <div className='home home-3'>
-          <h3 className='home-title'>
+        <div className="home home-3">
+          <h3 className="home-title">
             Going further than we ever have before.
           </h3>
-          <p className='book-font contain-center'>
+          <p className="book-font contain-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
             dictumst enim, nisl lectus nulla vitae praesent elementum neque. Non
             nisl consectetur tincidunt elementum nisi nec, parturient. Dictum
@@ -101,12 +101,12 @@ class Home extends Component {
             iaculis tristique morbi et neque. Tincidunt consequat congue nisl,
             sagittis in adipiscing ornare euismod eleifend.{" "}
           </p>
-          <div className='tile'>
+          <div className="tile">
             <Strategy />
 
             <div>
-              <h4 className='tile-title'>Performance Strategy</h4>
-              <p className='book-font'>
+              <h4 className="tile-title">Performance Strategy</h4>
+              <p className="book-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
                 dictumst enim, nisl lectus nulla vitae praesent elementum neque.
                 Non nisl consectetur tincidunt elementum nisi nec, parturient.
@@ -117,21 +117,21 @@ class Home extends Component {
                 eleifend.{" "}
               </p>
 
-              <div className='btn-container'>
+              <div className="btn-container">
                 <Link href={"/performance-strategy"}>
-                  <a className='text-link'>
+                  <a className="text-link">
                     Explore <Back />
                   </a>
                 </Link>
               </div>
             </div>
           </div>
-          <div className='tile'>
+          <div className="tile">
             <Techno />
 
             <div>
-              <h4 className='tile-title'>Tailored, Certified Nutrion</h4>
-              <p className='book-font'>
+              <h4 className="tile-title">Tailored, Certified Nutrion</h4>
+              <p className="book-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
                 dictumst enim, nisl lectus nulla vitae praesent elementum neque.
                 Non nisl consectetur tincidunt elementum nisi nec, parturient.
@@ -142,21 +142,21 @@ class Home extends Component {
                 eleifend.{" "}
               </p>
 
-              <div className='btn-container'>
+              <div className="btn-container">
                 <Link href={"/habit-hacking"}>
-                  <a className='text-link'>
+                  <a className="text-link">
                     Explore <Back />
                   </a>
                 </Link>
               </div>
             </div>
           </div>
-          <div className='tile'>
+          <div className="tile">
             <Stock />
 
             <div>
-              <h4 className='tile-title'>Wealth Management</h4>
-              <p className='book-font'>
+              <h4 className="tile-title">Wealth Management</h4>
+              <p className="book-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
                 dictumst enim, nisl lectus nulla vitae praesent elementum neque.
                 Non nisl consectetur tincidunt elementum nisi nec, parturient.
@@ -167,21 +167,21 @@ class Home extends Component {
                 eleifend.{" "}
               </p>
 
-              <div className='btn-container'>
+              <div className="btn-container">
                 <Link href={"/accountability"}>
-                  <a className='text-link'>
+                  <a className="text-link">
                     Explore <Back />
                   </a>
                 </Link>
               </div>
             </div>
           </div>
-          <div className='tile'>
+          <div className="tile">
             <Growth />
 
             <div>
-              <h4 className='tile-title'>Award Winning Personal Training</h4>
-              <p className='book-font'>
+              <h4 className="tile-title">Award Winning Personal Training</h4>
+              <p className="book-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
                 dictumst enim, nisl lectus nulla vitae praesent elementum neque.
                 Non nisl consectetur tincidunt elementum nisi nec, parturient.
@@ -192,9 +192,9 @@ class Home extends Component {
                 eleifend.{" "}
               </p>
 
-              <div className='btn-container'>
+              <div className="btn-container">
                 <Link href={"/accountability"}>
-                  <a className='text-link'>
+                  <a className="text-link">
                     Explore <Back />
                   </a>
                 </Link>
@@ -203,8 +203,8 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className='home home-4'>
-          <div className='container alice'>
+        <div className="home home-4">
+          <div className="container alice">
             <AliceCarousel
               mouseDragEnabled
               autoPlay
@@ -213,33 +213,33 @@ class Home extends Component {
               buttonsDisabled
               onSlideChanged={this.handleOnSlideChange}
             >
-              <div className='item'>
-                <h4 onDragStart={handleOnDragStart} className='company'>
+              <div className="item">
+                <h4 onDragStart={handleOnDragStart} className="company">
                   Company&Co.
                 </h4>
               </div>
-              <div className='item'>
-                <h4 onDragStart={handleOnDragStart} className='company'>
+              <div className="item">
+                <h4 onDragStart={handleOnDragStart} className="company">
                   Company&Co.
                 </h4>
               </div>
-              <div className='item'>
-                <h4 onDragStart={handleOnDragStart} className='company'>
+              <div className="item">
+                <h4 onDragStart={handleOnDragStart} className="company">
                   Company&Co.
                 </h4>
               </div>
-              <div className='item'>
-                <h4 onDragStart={handleOnDragStart} className='company'>
+              <div className="item">
+                <h4 onDragStart={handleOnDragStart} className="company">
                   Company&Co.
                 </h4>
               </div>
-              <div className='item'>
-                <h4 onDragStart={handleOnDragStart} className='company'>
+              <div className="item">
+                <h4 onDragStart={handleOnDragStart} className="company">
                   Company&Co.
                 </h4>
               </div>
             </AliceCarousel>
-            <div className='alice-above'>
+            <div className="alice-above">
               <div>
                 <h4>Who's involved</h4>
                 <h4>{`0${this.state.curr} | 0${this.state.total}`}</h4>
@@ -247,36 +247,25 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className='home home-5'>
-          <div className='home-beta'>
+        <div className="home home-5">
+          <div className="home-beta">
             <Signup />
           </div>
-          <div className='home-latest'>
+          <div className="home-latest">
             <h3>Content from us, to you.</h3>
-            <p className='home-latest-blurb'>
+            <p className="home-latest-blurb">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor
               dictumst enim, nisl lectus nulla vitae praesent elementum neque.
               Non nisl consectetur.
             </p>
-            <h4>Most recent</h4>
-            <div className='home-blogs-container'>
-              {this.props.latest.posts.map((post, i) => {
-                let newDate = new Date(post.date).toLocaleDateString("en-US", {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                });
-                return <Post key={i} date={newDate} post={post} />;
-              })}
-            </div>
           </div>
         </div>
 
-        <div className='home home-6'>
-          <p className='top'>Rock bottom, you can’t go any lower.</p>
-          <h2 className='middle'>Now you need to take action.</h2>
-          <div className='bottom'>
-            <div className='btn-container'>
+        <div className="home home-6">
+          <p className="top">Rock bottom, you can’t go any lower.</p>
+          <h2 className="middle">Now you need to take action.</h2>
+          <div className="bottom">
+            <div className="btn-container">
               <Button clickFunc={this.scrollUp} text={"Time to rise."} />
             </div>
           </div>
