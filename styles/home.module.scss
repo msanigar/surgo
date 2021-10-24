@@ -52,7 +52,6 @@
     color: $white;
     padding-bottom: 1.5rem;
     letter-spacing: -4.6px;
-    font-family: "Campton-Bold";
     letter-spacing: -0.8px;
 
     @include desktop {
@@ -75,7 +74,6 @@
 
   h3 {
     display: inline-block;
-    font-family: "Campton-Bold";
     letter-spacing: -0.8px;
   }
 }
@@ -110,7 +108,6 @@
     margin: 3rem;
 
     &.home-surgo-means {
-      font-family: "Campton-Bold";
       letter-spacing: -0.8px;
     }
 
@@ -128,7 +125,6 @@
     &.home-title {
       padding-top: 5rem;
       font-size: 1.5rem;
-      font-family: "Campton-Bold";
       letter-spacing: -0.8px;
 
       @include desktop {
@@ -162,7 +158,6 @@
   }
 
   .home-title {
-    font-family: "Campton-Bold";
     letter-spacing: -0.8px;
   }
 
@@ -332,7 +327,6 @@
       padding: 3.5rem 1rem;
       text-align: center;
       font-size: 1.75rem;
-      font-family: "Campton-Bold";
       letter-spacing: -0.8px;
       @include desktop {
         font-size: 2.5rem;
@@ -379,7 +373,6 @@
 .home-6 {
   background-color: $dark-blue;
   padding: 2rem;
-  font-family: "Campton-Bold";
   margin: 0 auto;
   text-align: center;
   display: flex;

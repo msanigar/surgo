@@ -34,7 +34,6 @@
 
 .text-link {
   cursor: pointer;
-  font-family: "Campton-Bold";
   color: $black;
   position: relative;
   max-width: 120px;
@@ -75,22 +74,19 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Campton-Medium", "Roboto",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .light-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Campton-Light", "Roboto",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .book-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Campton-Book", "Roboto",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

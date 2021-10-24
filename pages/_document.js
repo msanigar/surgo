@@ -15,6 +15,17 @@ export default class MyDocument extends Document {
               __html: 'history.scrollRestoration = "manual";',
             }}
           />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+          ></link>
+          <script
+            defer
+            data-domain="eloquent-brattain-42e403.netlify.app"
+            src="https://plausible.io/js/plausible.js"
+          ></script>
         </Head>
         <body>
           <Main />
