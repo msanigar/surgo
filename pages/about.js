@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-
-import Back from "../components/SVG/Back";
+import Image from "next/image";
 import Mission from "../components/SVG/Mission";
 import Careers from "../components/SVG/Careers";
 import Nav from "../components/Nav";
@@ -98,12 +97,12 @@ class About extends Component {
               <h3>Meet the team bringing Surgo to life</h3>
               <div className="team">
                 <div>
-                  <img alt="Alex Byfield - Managing Director" src={Profile} />
+                  <Image alt="Alex Byfield - Managing Director" src={Profile} />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     alt="Christina McGrath - Head of Sports"
                     src={Profile2}
                   />
@@ -111,7 +110,7 @@ class About extends Component {
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     alt="Gareth Sissons - Creative Director"
                     src={Profile3}
                   />
@@ -119,12 +118,15 @@ class About extends Component {
                   <p>Creative Director</p>
                 </div>
                 <div>
-                  <img alt="Alex Byfield - Managing Director" src={Profile4} />
+                  <Image
+                    alt="Alex Byfield - Managing Director"
+                    src={Profile4}
+                  />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     alt="Christina McGrath - Head of Sports"
                     src={Profile5}
                   />
@@ -132,7 +134,7 @@ class About extends Component {
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     alt="Gareth Sissons - Creative Director"
                     src={Profile6}
                   />
@@ -140,12 +142,15 @@ class About extends Component {
                   <p>Creative Director</p>
                 </div>
                 <div>
-                  <img alt="Alex Byfield - Managing Director" src={Profile7} />
+                  <Image
+                    alt="Alex Byfield - Managing Director"
+                    src={Profile7}
+                  />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     alt="Christina McGrath - Head of Sports"
                     src={Profile8}
                   />
@@ -153,7 +158,7 @@ class About extends Component {
                   <p>Head of Sports</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     alt="Gareth Sissons - Creative Director"
                     src={Profile9}
                   />
