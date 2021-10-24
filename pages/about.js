@@ -97,70 +97,100 @@ class About extends Component {
               <h3>Meet the team bringing Surgo to life</h3>
               <div className="team">
                 <div>
-                  <Image alt="Alex Byfield - Managing Director" src={Profile} />
+                  <Image
+                    height={"164px"}
+                    width={"164px"}
+                    alt="Alex Byfield - Managing Director"
+                    src={Profile}
+                    layout={"fixed"}
+                  />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Christina McGrath - Head of Sports"
                     src={Profile2}
+                    layout={"fixed"}
                   />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Gareth Sissons - Creative Director"
                     src={Profile3}
+                    layout={"fixed"}
                   />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Alex Byfield - Managing Director"
                     src={Profile4}
+                    layout={"fixed"}
                   />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Christina McGrath - Head of Sports"
                     src={Profile5}
+                    layout={"fixed"}
                   />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Gareth Sissons - Creative Director"
                     src={Profile6}
+                    layout={"fixed"}
                   />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Alex Byfield - Managing Director"
                     src={Profile7}
+                    layout={"fixed"}
                   />
                   <h4>Alex Byfield</h4>
                   <p>Managing Director</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Christina McGrath - Head of Sports"
                     src={Profile8}
+                    layout={"fixed"}
                   />
                   <h4>Christina McGrath</h4>
                   <p>Head of Sports</p>
                 </div>
                 <div>
                   <Image
+                    height={"164px"}
+                    width={"164px"}
                     alt="Gareth Sissons - Creative Director"
                     src={Profile9}
+                    layout={"fixed"}
                   />
                   <h4>Gareth Sissons</h4>
                   <p>Creative Director</p>
