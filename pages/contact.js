@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import Nav from "../components/Nav";
 import Button from "../components/Button";
 
-import "../styles/Main.scss";
-
 class Contact extends Component {
   constructor(props) {
     super(props);

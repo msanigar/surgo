@@ -5,9 +5,6 @@ import Nav from "../components/Nav";
 import Button from "../components/Button";
 import Signup from "../components/Signup";
 import Chevron from "../components/SVG/Chevron";
-
-import "../styles/Main.scss";
-
 class Accountability extends Component {
   constructor(props) {
     super(props);

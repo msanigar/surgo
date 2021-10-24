@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 import Strategy from "../SVG/Strategy";
 import Techno from "../SVG/Techno";
@@ -9,7 +8,6 @@ import Stock from "../SVG/Stock";
 import Growth from "../SVG/Growth";
 import Back from "../SVG/Back";
 import Nav from "../Nav";
-import Post from "../Post";
 import Button from "../Button";
 import Signup from "../Signup";
 import Cookies from "../Cookies";

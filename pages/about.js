@@ -16,8 +16,6 @@ import Profile7 from "../styles/img/profile7.png";
 import Profile8 from "../styles/img/profile8.png";
 import Profile9 from "../styles/img/profile9.png";
 
-import "../styles/Main.scss";
-
 class About extends Component {
   constructor(props) {
     super(props);
