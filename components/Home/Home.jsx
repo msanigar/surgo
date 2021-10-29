@@ -205,8 +205,8 @@ class Home extends Component {
               mouseDragEnabled
               autoPlay
               autoPlayInterval={2500}
-              dotsDisabled
-              buttonsDisabled
+              disableButtonsControls
+              disableDotsControls
               onSlideChanged={this.handleOnSlideChange}
             >
               <div className="item">
