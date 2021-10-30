@@ -204,6 +204,7 @@ class Home extends Component {
             <AliceCarousel
               mouseDragEnabled
               autoPlay
+              infinite
               autoPlayInterval={2500}
               disableButtonsControls
               disableDotsControls
