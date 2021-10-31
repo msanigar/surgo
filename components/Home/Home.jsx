@@ -59,7 +59,7 @@ class Home extends Component {
         <Cookies />
         <div className="video-container">
           <div className="video-overlay" />
-          <video autoPlay muted loop playsinline className="cover-video">
+          <video autoPlay muted loop playsInline className="cover-video">
             <source src={"/2825068_1080.mp4"} type="video/mp4" />
           </video>
         </div>
